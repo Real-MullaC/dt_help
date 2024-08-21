@@ -8,7 +8,7 @@ If you want to test the changes made to a Windows image, you can easily do so wi
 
 You will need the Windows Assessment and Deployment Kit (ADK), which you can download using the convenient link on the bottom left.
 
-*This tool is available in DISMTools 0.5*
+*This tool is available in DISMTools 0.5 and later.*
 
 ## Usage
 
@@ -16,7 +16,8 @@ To create a new ISO file, do the following:
 
 1. **Pick your Windows image.** You can either browse through your computer for a Windows image to copy, pick an image from the pop-up mounted image picker, or pick the currently loaded one. Once you pick a Windows image, you will see information about each index in the image
 2. **Choose the architecture for the Preinstallation Environment** by using the architecture list. It is recommended to pick the one that the image supports
-3. **Choose the target location of the ISO file.** If the target image exists, you will be asked if you want to replace it when clicking Create
+3. (Optional, new in DISMTools 0.5.1) **Choose an unattended answer file to apply**
+4. **Choose the target location of the ISO file.** If the target image exists, you will be asked if you want to replace it when clicking Create
 
 This process can take between 5 to 10 minutes, depending on the size of the Windows image and the speed of your computer's disk drive.
 
@@ -116,6 +117,20 @@ Here's how you can proceed:
 	![Disk Listing](../../../res/img_tasks/tools/isocreator/dim/practical_use/disk_after.jpg)
 	
 <!-- And, yes, I know how to make screenshots -->
+
+### Extensibility Suite
+
+The Extensibility Suite lets you expand the DISMTools Preinstallation Environment even further by letting you modify its functionality and add applications. You can add to the Preinstallation Environment applications that you may find useful, or applications that you have worked on.
+
+*This task is available in DISMTools 0.5.1 and later.*
+
+#### Usage
+
+1. Go to Tools > Create a testing environment...
+2. Specify the architecture and target location
+3. Click Create
+
+Then, you can look at the README file in the target directory to learn more.
 
 ## Remarks
 

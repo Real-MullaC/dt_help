@@ -55,6 +55,14 @@ You may notice that all options are disabled. This is because the program uses a
 
 **NOTE:** specifying a region requires DISM for Windows 10 and/or a Windows 10 or later image.
 
+- **<i>New to DISMTools 0.5.1 and later!</i>** If you want, you can configure **stub package preferences** for your applications. Think of these as temporary packages that download the full version of an application. Setting an application to use the full package will explicitly install the full version of the package.
+
+**NOTE:** you can only configure stub package preferences if the following criteria are met:
+
+I. The DISM version used and the Windows image serviced are Windows 10 and later
+
+II. The application contains stub packages
+
 - If you want, you can **commit the image after adding the selected AppX packages**.
 
 ## Questions

@@ -30,6 +30,18 @@ You need to specify the source of the packages you want to add. Then, you can ch
 - If an operation requires that you boot to the image in order to finish (requires online operations), you can **skip package installation**
 - If you want, you can **commit the changes to the image** after adding the packages
 
+## Microsoft Update Manifest files
+
+With DISMTools you can also add Microsoft Update Manifest files by clicking the appropriately named button on the bottom left.
+
+<p align="center">
+	<img src="../../../res/img_tasks/packages/mum_addition.png" />
+</p>
+
+*This action is supported on DISMTools 0.5.1 and later*
+
+This is for advanced use only.
+
 ## Related topics
 
 - [Command-line help](https://example.com)
