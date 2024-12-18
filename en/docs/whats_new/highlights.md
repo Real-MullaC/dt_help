@@ -29,7 +29,7 @@ When saving the information of a Windows image, you will now see prettier result
 DISMTools 0.6 lets you get information about a set of features and capabilities filtered by their state. For example, to get Client features that are enabled, type `Client state:enabled`. To get the features that are disabled, type `state:disabled` in your search query.
 
 <p align="center">
-	<img src="../../../res/img_tasks/info/feat_info_state_filter.gif" />
+	<img src="../../res/img_tasks/info/feat_info_state_filter.gif" />
 </p>
 
 [Learn more](../../img_tasks/info/infodlgs/#searching-through-this-information)
