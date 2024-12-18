@@ -4,60 +4,55 @@ This new version of DISMTools comes with new features that enhance image managem
 
 If you want to take a look at everything that has changed though, check out the [release notes page](https://github.com/CodingWonders/DISMTools/releases/latest) for more information.
 
-## Test your Windows images with more confidence
+## See image information reports in a prettier way
 
-The ISO creation tools have seen several improvements with the addition of 2 new features. The **Driver Installation Module** lets you add drivers to Windows Preinstallation Environments to add support for devices that are not compatible by default, and the **Extensibility Suite** lets you perform further customizations to the DISMTools Preinstallation Environment to include your applications (either the ones that you have made or the ones that you find useful to include).
+When saving the information of a Windows image, you will now see prettier results due to the reports now being saved as Markdown files and, with the inclusion of [Markdig](https://www.github.com/xoofx/Markdig), results can be shown in Web view.
+
+**See more with less scrolling**, with the use of tables for the properties of any elements you may be interested in getting information about.
 
 <p align="center">
 	<img src="../../res/whats_new/WhatsNew_1.png" />
 </p>
 
-[Check out the new features](../../img_tasks/tools/isocreator#driver-installation-module)
-
-## Task additions and improvements
-
-DISMTools 0.5.1 comes with improvements to existing tasks and some newcomers. For example, you can now configure stub package preferences for AppX packages, so that you can either explicitly install the full version of an application, its stub version (meaning that the full application will be downloaded on first launch), or go with the defaults for the application package.
-
-Also, you can now list the contents of Windows images (even the ones that haven't been mounted) with the **Windows Image Explorer**, which is also available as a standalone download.
-
-Next, package addition has received the ability to add Microsoft Update Manifest (MUM) files. And, finally, you can now configure keyboard layered drivers for Japanese and Korean keyboards.
+**Print beautiful information and read more at once**. The printing functionalities now print the contents of the Web view, allowing you to have the same output as the HTML page:
 
 <p align="center">
 	<img src="../../res/whats_new/WhatsNew_2.png" />
 </p>
 
-Learn more about:
+**View the Markdown source**. If you prefer to look at what forms the Markdown report, you can switch to the source view by clicking "Display content in Web view"
 
-- [Stub package preferences](../../img_tasks/appx/add_provisionedappxpackage/#options)
-- [Listing files of Windows images](../../img_tasks/mgmt/list_image)
-- [Microsoft Update Manifest files](../../img_tasks/packages/add_package/#microsoft-update-manifest-files)
-- [Setting keyboard layered drivers](../../img_tasks/langs/set_layereddriver)
+[Learn how to make the most of image information reports](../../img_tasks/info/infodlgs/#saving-image-information)
 
-## Revamped unattended answer file features
+## Get information about the features and capabilities you want
 
-The unattended answer file features have been significantly revamped, thanks to a new base powered by the [unattended answer file generator from Christoph Schneegans](https://schneegans.de/windows/unattend-generator/). This includes a revamped creation wizard, a new manager, and a new task that lets you apply such files.
+DISMTools 0.6 lets you get information about a set of features and capabilities filtered by their state. For example, to get Client features that are enabled, type `Client state:enabled`. To get the features that are disabled, type `state:disabled` in your search query.
 
-When creating your ISO files, you can also use your unattended answer file to test it. The Operating System installer will apply it for you.
+<p align="center">
+	<img src="../../../res/img_tasks/info/feat_info_state_filter.gif" />
+</p>
+
+[Learn more](../../img_tasks/info/infodlgs/#searching-through-this-information)
+
+## Manage image registry hives more easily
+
+DISMTools 0.6 introduces an easy-to-use control panel for the registry hives of the image or offline installation you are managing. You can use this control panel to load one or more hives from our default set (`SOFTWARE`, `SYSTEM`, `DEFAULT` and `NTUSER.DAT`), or any other hive in the image. When you close this control panel, all loaded hives will be automatically unloaded for you, so you don't have to unload them manually.
 
 <p align="center">
 	<img src="../../res/whats_new/WhatsNew_3.png" />
 </p>
 
-[Explore the new unattended answer file features](../../img_tasks/unattend/unattend)
+[Learn more](../../img_tasks/tools/regcpl)
 
-## New translations
+## Improved unattended answer file features
 
-*Ciao!* We have travelled to a country with amazing places like Rome or Venice, with amazing food like spaghetti or *ravioli*, and with tourist attractions like the Colosseum or the leaning tower of Pisa.
+The unattended answer file features have seen slight improvements as well. Now, you can configure placeholders for additional components automatically, without having to resort to manual additions of such components to the passes of your unattended answer files. And, after creating the answer file, you can quickly begin editing it further on both the Editor mode and the Windows System Image Manager (SIM), which is part of the Assessment and Deployment Kit.
 
-Jokes aside, we have added Italian translations to this version, making it the fifth supported language.
-
-<p align="center">
-	<img src="../../res/whats_new/WhatsNew_4.jpg" />
-</p>
+There are some minor improvements to the overall features too.
 
 ## Overall refinements
 
-This release also focuses on refining existing tasks and functionality to improve the user experience. For example, you can now get a description of operation errors instead of generic instructions telling you to look at the error codes online. We have updated the dependencies of the program, simplified the logic of some tasks, and improved detection of Assessment and Deployment Kits as well.
+This release also focuses on refining existing tasks and functionality to improve the user experience. For example, more items have received translations, the program is more reliable, and components have been updated to their latest versions.
 
 <!-- Room for more features -->
 
@@ -65,8 +60,11 @@ This release also focuses on refining existing tasks and functionality to improv
 
 The following people have helped shape this version of DISMTools by reporting issues or suggesting new features or changes:
 
-- [AnubyteCode](https://github.com/AnubyteCode) for suggesting MUM package addition,
-- [drew84](https://forums.mydigitallife.net/members/drew84.422144/) for suggesting Christoph Schneegans' library for the unattended answer file features, and
-- [vadimlitvinenko87](https://github.com/vadimlitvinenko87) for spotting video feed detector issues
+- [David Retzloff](https://forums.mydigitallife.net/members/david-retzloff.1567430/) for spotting issues with the unattended answer file features,
+- [Procstas](https://github.com/Procstas) for spotting issues with some actions of the project tree view,
+- [l33m4n](https://github.com/l33m4n) for spotting issues with the configuration of some settings, and
+- [bovirus](https://github.com/bovirus) for spotting and fixing issues with the installer
+
+<!-- The third one is temporary depending on whether or not the issues had been fixed by the time of the release of 0.6 -->
 
 If you want to appear in this list, you can report issues or suggestions in any channel you prefer (via the [MDL forum thread](https://forums.mydigitallife.net/threads/dismtools.87263/), via the [GitHub repository](https://github.com/CodingWonders/DISMTools), or via any announcements on the [DISMTools subreddit](https://reddit.com/r/DISMTools) or on the [Windows](https://reddit.com/r/Windows), [Windows11](https://reddit.com/r/Windows11) and [Windows10](https://reddit.com/r/Windows10) subreddits (as comments)) or submit new code changes (read the [contribution guidelines](https://github.com/CodingWonders/DISMTools/blob/stable/CONTRIBUTING.md) for more information).

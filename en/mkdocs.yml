@@ -70,6 +70,7 @@ nav:
     - SWM file merger: img_tasks/tools/swm2wim.md
     - DISM Configuration List Editor: img_tasks/tools/configlisteditor.md
     - ISO creation tools: img_tasks/tools/isocreator.md
+    - Image registry control panel: img_tasks/tools/regcpl.md
 - Command-line tools:
   - Overview: cli_tools/cli_tools.md
   - Command Console:

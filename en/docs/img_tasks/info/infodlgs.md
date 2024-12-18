@@ -42,6 +42,10 @@ DISMTools 0.4 expands this functionality by showing a preview of the information
     <img src="https://github.com/CodingWonders/DISMTools/assets/101426328/c236375b-ce3d-46bb-8ef4-e9749205265d" />
 </p>
 
+DISMTools 0.6 further improves this functionality by saving information to Markdown files and by showing those files as HTML pages. This allows for a more visually pleasing output with which you can view more information with less scrolling.
+
+Printing with this version and later versions requires you to use landscape for better printed copies.
+
 ## Searching through this information
 
 DISMTools 0.5 introduces **Search capabilities** to the information dialogs, allowing you to get the results you want more easily.
@@ -63,3 +67,5 @@ The following items support this functionality:
 - Installed AppX packages (only if the extended AppX getter script is not run)
 - Capabilities
 - Installed drivers
+
+For features and capabilities, you can now use **state filters** with DISMTools 0.6.
