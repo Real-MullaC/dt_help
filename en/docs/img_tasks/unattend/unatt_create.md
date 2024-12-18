@@ -28,7 +28,7 @@ The editor mode lets you perform advanced customizations to your unattended answ
 
 ## Requirements
 
-The unattended answer file creator requires the .NET 8 Runtime for the generator program to function. If DISMTools detects that the runtime hasn't been installed, you will be offered the ability to use the self-contained version, which contains the runtime:
+The unattended answer file creator requires the .NET 9 Runtime for the generator program to function. If DISMTools detects that the runtime hasn't been installed, you will be offered the ability to use the self-contained version, which contains the runtime:
 
 <p align="center">
     <img src="../../../res/img_tasks/unattend/unatt_creator/unattendgen_selfcontained.png" />
