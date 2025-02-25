@@ -2,6 +2,10 @@ site_name: DISMTools Help Documentation
 theme:
   name: readthedocs
   sticky_navigation: False
+  highlightjs: true
+  hljs_languages:
+    - powershell
+    - cmd
 nav:
 - Home: index.md
 - Getting started: getting_started/start.md
@@ -11,7 +15,6 @@ nav:
   - Online installation management mode: img_tasks/online_inst_mgmt.md
   - Offline installation management mode: img_tasks/offline_inst_mgmt.md
   - Image management:
-#    - Overview: img_tasks/mgmt.md
     - Appending to an image: img_tasks/mgmt/append_image.md
     - Applying an image: img_tasks/mgmt/apply_image.md
     - Capturing an image: img_tasks/mgmt/capture_image.md
@@ -55,26 +58,15 @@ nav:
     - Exporting drivers: img_tasks/drivers/export_driver.md
     - Importing drivers: img_tasks/drivers/import_driver.md
     - Removing drivers: img_tasks/drivers/remove_driver.md
-  - Windows PE servicing:
-    - Setting the target path: img_tasks/winpe/set_targetpath.md
-    - Setting the scratch space: img_tasks/winpe/set_scratchspace.md
-#  - Command-line help: img_tasks/cli_tools/cli_help
+- Tools:
+  - Mounted image manager: img_tasks/tools/mimgmgr.md
+  - Image conversion: img_tasks/tools/wim2esd.md
+  - SWM file merger: img_tasks/tools/swm2wim.md
+  - DISM Configuration List Editor: img_tasks/tools/configlisteditor.md
+  - ISO creation tools: img_tasks/tools/isocreator.md
+  - Image registry control panel: img_tasks/tools/regcpl.md
   - Unattended answer files:
     - Overview: img_tasks/unattend/unattend.md
     - Unattended answer file manager: img_tasks/unattend/unatt_man.md
     - Unattended answer file creator: img_tasks/unattend/unatt_create.md
     - Applying unattended answer files: img_tasks/unattend/unatt_apply.md
-  - Tools:
-    - Mounted image manager: img_tasks/tools/mimgmgr.md
-    - Image conversion: img_tasks/tools/wim2esd.md
-    - SWM file merger: img_tasks/tools/swm2wim.md
-    - DISM Configuration List Editor: img_tasks/tools/configlisteditor.md
-    - ISO creation tools: img_tasks/tools/isocreator.md
-    - Image registry control panel: img_tasks/tools/regcpl.md
-- Command-line tools:
-  - Overview: cli_tools/cli_tools.md
-  - Command Console:
-    - Overview: cli_tools/cmd_console.md
-    - Tools:
-      - Command help: cli_tools/cmdhelp.md
-      - Extended AppX package getter: cli_tools/extappx.md

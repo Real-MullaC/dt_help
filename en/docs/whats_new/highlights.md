@@ -4,51 +4,49 @@ This new version of DISMTools comes with new features that enhance image managem
 
 If you want to take a look at everything that has changed though, check out the [release notes page](https://github.com/CodingWonders/DISMTools/releases/latest) for more information.
 
-## See image information reports in a prettier way
+## Start installations from full operating environments, and more Preinstallation Environment goodies
 
-When saving the information of a Windows image, you will now see prettier results due to the reports now being saved as Markdown files and, with the inclusion of [Markdig](https://www.github.com/xoofx/Markdig), results can be shown in Web view.
-
-**See more with less scrolling**, with the use of tables for the properties of any elements you may be interested in getting information about.
+DISMTools 0.6.1 features a new way to start the installation of your customized image with a technology called *HotInstall*. This installer configures the boot entries of your computer to automatically boot to the DISMTools Preinstallation Environment, from which you can perform image application and disk configuration.
 
 <p align="center">
-	<img src="../../res/whats_new/WhatsNew_1.png" />
+	<img src="../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_progress.png" />
 </p>
 
-**Print beautiful information and read more at once**. The printing functionalities now print the contents of the Web view, allowing you to have the same output as the HTML page:
+The Preinstallation Environment Helper has also been improved, adding support for the latest Windows ADKs, the ability to create disc images with [boot binaries signed with new certificates](https://techcommunity.microsoft.com/blog/windows-itpro-blog/revoking-vulnerable-windows-boot-managers/4121735), and the ability to get more information about your Windows image:
+
+<p align="center">
+	<img src="../../res/img_tasks/tools/isocreator/DT_PE_ImageInfo.png" />
+</p>
+
+The ISO creator lets you copy your disc images to Ventoy drives as well:
+
+<p align="center">
+	<img src="../../res/img_tasks/tools/isocreator/isocreator_vtoy.png" />
+</p>
+
+[Learn more about the new ISO creation features](../../img_tasks/tools/isocreator)
+
+## New features for your unattended answer files
+
+The unattended answer file features now let you configure post-installation scripts in PowerShell. You can write your own code, or you can open an existing script.
 
 <p align="center">
 	<img src="../../res/whats_new/WhatsNew_2.png" />
 </p>
 
-**View the Markdown source**. If you prefer to look at what forms the Markdown report, you can switch to the source view by clicking "Display content in Web view"
-
-[Learn how to make the most of image information reports](../../img_tasks/info/infodlgs/#saving-image-information)
-
-## Get information about the features and capabilities you want
-
-DISMTools 0.6 lets you get information about a set of features and capabilities filtered by their state. For example, to get Client features that are enabled, type `Client state:enabled`. To get the features that are disabled, type `state:disabled` in your search query.
+You can also **normalize the spacing** of unattended answer files to make it consistent:
 
 <p align="center">
-	<img src="../../res/img_tasks/info/feat_info_state_filter.gif" />
+	<img src="../../res/img_tasks/unattend/unatt_creator/unatt_creator_editor_normalize.gif" />
 </p>
 
-[Learn more](../../img_tasks/info/infodlgs/#searching-through-this-information)
-
-## Manage image registry hives more easily
-
-DISMTools 0.6 introduces an easy-to-use control panel for the registry hives of the image or offline installation you are managing. You can use this control panel to load one or more hives from our default set (`SOFTWARE`, `SYSTEM`, `DEFAULT` and `NTUSER.DAT`), or any other hive in the image. When you close this control panel, all loaded hives will be automatically unloaded for you, so you don't have to unload them manually.
+Your unattended answer files can also target multiple processor architectures. For example, you can create an answer file that works on regular computers and ARM-based Copilot+ PCs:
 
 <p align="center">
-	<img src="../../res/whats_new/WhatsNew_3.png" />
+	<img src="../../res/whats_new/WhatsNew_4.png" />
 </p>
 
-[Learn more](../../img_tasks/tools/regcpl)
-
-## Improved unattended answer file features
-
-The unattended answer file features have seen slight improvements as well. Now, you can configure placeholders for additional components automatically, without having to resort to manual additions of such components to the passes of your unattended answer files. And, after creating the answer file, you can quickly begin editing it further on both the Editor mode and the Windows System Image Manager (SIM), which is part of the Assessment and Deployment Kit.
-
-There are some minor improvements to the overall features too.
+[Learn more about the new unattended answer file features](../../img_tasks/unattend/unatt_create)
 
 ## Overall refinements
 
@@ -60,11 +58,11 @@ This release also focuses on refining existing tasks and functionality to improv
 
 The following people have helped shape this version of DISMTools by reporting issues or suggesting new features or changes:
 
-- [David Retzloff](https://forums.mydigitallife.net/members/david-retzloff.1567430/) for spotting issues with the unattended answer file features,
-- [Procstas](https://github.com/Procstas) for spotting issues with some actions of the project tree view,
-- [l33m4n](https://github.com/l33m4n) for spotting issues with the configuration of some settings, and
-- [bovirus](https://github.com/bovirus) for spotting and fixing issues with the installer
-
-<!-- The third one is temporary depending on whether or not the issues had been fixed by the time of the release of 0.6 -->
+- [Dretreyt](https://github.com/Dretreyt) for spotting issues with setting save functionality,
+- [arielsil](https://github.com/arielsil) for spotting issues with some background processes functions and some tasks,
+- [novice55](https://github.com/novice55) for spotting issues with background processes,
+- [webber3242](https://github.com/webber3242) for spotting issues with project creation,
+- [Dede333](https://github.com/Dede333) for helping spot WIMBoot issues with non-Windows 8.1 images, and
+- [InnerBrat](https://github.com/InnerBrat) for spotting folder attribute detection issues
 
 If you want to appear in this list, you can report issues or suggestions in any channel you prefer (via the [MDL forum thread](https://forums.mydigitallife.net/threads/dismtools.87263/), via the [GitHub repository](https://github.com/CodingWonders/DISMTools), or via any announcements on the [DISMTools subreddit](https://reddit.com/r/DISMTools) or on the [Windows](https://reddit.com/r/Windows), [Windows11](https://reddit.com/r/Windows11) and [Windows10](https://reddit.com/r/Windows10) subreddits (as comments)) or submit new code changes (read the [contribution guidelines](https://github.com/CodingWonders/DISMTools/blob/stable/CONTRIBUTING.md) for more information).

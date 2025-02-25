@@ -7,7 +7,3 @@ Unattended answer files let you configure settings of your Windows image automat
 - [Creating unattended answer files](../unatt_create)
 - [Managing unattended answer files](../unatt_man)
 - [Applying unattended answer files](../unatt_apply)
-
-<p align="center">
-	<img src="../../../res/whats_new/WhatsNew_3.png" />
-</p>

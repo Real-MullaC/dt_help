@@ -19,47 +19,125 @@ To create a new ISO file, do the following:
 3. (Optional, new in DISMTools 0.5.1) **Choose an unattended answer file to apply**
 4. **Choose the target location of the ISO file.** If the target image exists, you will be asked if you want to replace it when clicking Create
 
+With DISMTools 0.6.1 and later, you can also specify 2 options:
+
+- **Copy to Ventoy drives** lets you take advantage of your [Ventoy](https://ventoy.net/en) drives for operating system installation. After the ISO is generated, it will be copied automatically to all Ventoy drives you have plugged into your computer
+- **Use newly-signed boot binaries** will make the ISO files that you create ship with EFI boot binaries signed with the *Windows UEFI CA 2023* code-signing certificate. This is not checked by default because of reasons that are mentioned later in this document
+
 This process can take between 5 to 10 minutes, depending on the size of the Windows image and the speed of your computer's disk drive.
 
-### The Preinstallation Environment (PE) Helper
+## Starting installation
 
-All ISO creation and OS installation procedures are performed by a script known as the **Preinstallation Environment (PE) Helper**. This has 2 modes: environment generation and OS installation.
+You can start the installation of your operating system in 2 ways:
 
-#### Environment generation
+- By booting to installation media, or
+- By starting the installation from within a full Windows environment (DISMTools 0.6.1 and later)
 
-The PE Helper will do the following during this phase:
+### Starting from a full Windows environment
 
-1. Copy PE files to a temporary directory in the program files directory
-2. Mount the Windows PE image
-3. Copy operating system packages to the temporary directory
-4. Add the following packages: .NET Framework (`WinPE-NetFx`), WMI support (`WinPE-WMI`), PowerShell (`WinPE-PowerShell`) and Deployment Image Servicing and Management (DISM) cmdlets (`WinPE-DismCmdlets`)
-5. Perform the following customizations: set up a custom wallpaper, configure startup and command prompt settings and scratch space
-6. Save changes and unmount the WinPE image
-7. Copy the source image file to test
-8. Copy scripts, including the PE Helper
-9. Create the ISO file
+DISMTools 0.6.1 and later come with a program that prepares your computer for OS installation. This is called *HotInstall*, and the process of computer preparation is as follows:
 
-#### OS installation
+**NOTE:** HotInstall does not support Ventoy drives, due to the way they work
 
-During OS installation, the PE helper will do the following:
+1. Start `setup.exe` in the root of the DVD or USB drive. If you see a notification when inserting the installation media, you can also click on it to start the installer, effectively taking advantage of AutoRun:
 
-1. Ask you what disk and partition will be used for OS installation
-2. Write disk configuration tailored to the system configuration (BIOS/UEFI)
-3. Ask you the index of the source image to apply
-4. Apply the source image
-5. Run serviceability tests
-6. Create boot files tailored to the system configuration (BIOS/UEFI)
-7. Reboot your system
+	![HotInstall start](../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_dvdstart.png)
+
+2. Accept the disclaimers and click Next:
+
+	![HotInstall disclaimer](../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_disclaimers.png)
+
+3. Review that the ISO file contains the installation image you want to test, and click Next. On this screen, you can also export all your third-party drivers to a folder, in case you need them later:
+
+	![HotInstall image review](../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_review_image_info.png)
+	
+4. Wait for your computer to be prepared for installation. This process will take some time, depending on your computer's performance:
+
+	![HotInstall progress](../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_progress.png)
+
+After restarting your computer, choose "DISMTools Operating System Installation" (if it is not selected by default) and press Enter. The first stage of the installation will start:
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/isocreator/DISMTools_PE.png" />
+	<img src="../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_bootmgr.png" />
 </p>
 
-#### Serviceability tests
+### Continuing the installation
 
-Serviceability tests are performed during OS installation to make sure that the image that has been applied is valid. They are only run if the architectures of the PE and the image are the same, and must pass in order to successfully complete the installation of the operating system.
+Whether you've started the installation with HotInstall or by booting to installation media, the installation process will be the same. The Preinstallation Environment Helper will guide you through the installation process, which includes:
 
-If these tests fail, you may need to repair the component store of your Windows image.
+1. Selecting the disk and partition where the operating system will be installed
+2. Choosing the index of the Windows image to apply
+3. Applying the Windows image
+4. Running serviceability tests
+5. Creating boot files
+6. Rebooting your system
+
+Let's go over these steps in more detail:
+
+#### Selecting the disk and partition
+
+The PE Helper will get the disks that are available on your computer:
+
+<p align="center">
+	<img src="../../../res/img_tasks/tools/isocreator/dt_pe/dt_pe_disk_chooser.png" />
+</p>
+
+On this screen, you can also stop for a moment to take actions if something does not look right with the disk listing, or if you want to see what disks have enough free space for the installation of your Windows image:
+
+- If you don't see the disk you want to use, it could be because your computer uses a third-party disk controller. If that is the case, type `DIM` and press Enter to open the Driver Installation Module. More information on how to use this tool can be found later in this document
+- (**Only for installations started with HotInstall**) If you want to see the free space on your disks, type `DSCR` and press Enter. This will show you the Disk Space Checker report generated by HotInstall:
+
+<p align="center">
+	<img src="../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_dscr.png" />
+</p>
+
+After selecting the disk, you will be asked to select the partition where the operating system will be installed. You can choose to clean all the partitions of your disk, or you can choose to format a specific partition:
+
+<p align="center">
+	<img src="../../../res/img_tasks/tools/isocreator/dt_pe/dt_pe_part_chooser.png" />
+</p>
+
+**IMPORTANT:** all actions past this point are irreversible. Make sure that you have backed up your data, and that you have selected the correct disk, before proceeding.
+
+#### Choosing the index of the Windows image
+
+After selecting the disk and partition, you will be asked to choose the index of the Windows image that you want to apply. The PE Helper will show you basic index information, including the name you have given to the image:
+
+<p align="center">
+	<img src="../../../res/img_tasks/tools/isocreator/dt_pe/dt_pe_image_chooser.png" />
+</p>
+
+You can also see a bit more information about the image by typing `INFO` and pressing Enter:
+
+<p align="center">
+	<img src="../../../res/img_tasks/tools/isocreator/DT_PE_ImageInfo.png" />
+</p>
+
+After choosing the index, the PE Helper will apply the image to the selected disk or partition, will run serviceability tests, and will create boot files.
+
+After everything is done, your computer will restart automatically in 10 seconds:
+
+<p align="center">
+	<img src="../../../res/img_tasks/tools/isocreator/dt_pe/dt_pe_comp_restart.png" />
+</p>
+
+From this point, you can remove the installation media and let your computer finish operating system configuration.
+
+#### Windows UEFI CA 2023 information
+
+The Windows UEFI CA 2023 certificate is now used to sign new EFI boot binaries. This is present in versions 10.1.26100.2454 and later of the Windows ADK as an option for ISO file creation.
+
+Some computers may not boot correctly using these new EFI boot binaries, and compatibility may depend on whether or not a device that uses UEFI contains this certificate. You can check if your computer contains this certificate by running the following PowerShell command as an administrator:
+
+```powershell
+[System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI db).bytes) -match 'Windows UEFI CA 2023'
+```
+
+If the command returns `True`, your computer has this certificate. Otherwise, you may need updates to add support for this certificate. If you have doubts regarding the compatibility of your computer with this certificate, it is recommended to leave the option unchecked.
+
+MBR systems are not affected by this change.
+
+You can learn more here: [Revoking vulnerable Windows boot managers](https://techcommunity.microsoft.com/blog/windows-itpro-blog/revoking-vulnerable-windows-boot-managers/4121735)
 
 ### Driver Installation Module
 
@@ -117,6 +195,12 @@ Here's how you can proceed:
 	![Disk Listing](../../../res/img_tasks/tools/isocreator/dim/practical_use/disk_after.jpg)
 	
 <!-- And, yes, I know how to make screenshots -->
+
+#### Serviceability tests
+
+Serviceability tests are performed during OS installation to make sure that the image that has been applied is valid. They are only run if the architectures of the PE and the image are the same, and must pass in order to successfully complete the installation of the operating system.
+
+If these tests fail, you may need to repair the component store of your Windows image.
 
 ### Extensibility Suite
 

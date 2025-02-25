@@ -12,6 +12,9 @@ The mounted image manager allows you to manage your mounted images easily. You c
 - Access the mount directory of an image
 - Remove volume images (for images with multiple indexes)
 - Load a mount directory to projects with no images loaded
+- Get image file information
+- Save image information
+- [Create ISO files](../isocreator)
 
 ## Operations
 
