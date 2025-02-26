@@ -2,10 +2,6 @@ site_name: DISMTools Help Documentation
 theme:
   name: readthedocs
   sticky_navigation: False
-  highlightjs: true
-  hljs_languages:
-    - powershell
-    - cmd
 nav:
 - Home: index.md
 - Getting started: getting_started/start.md
