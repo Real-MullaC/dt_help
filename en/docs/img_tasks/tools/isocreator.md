@@ -107,7 +107,7 @@ After selecting the disk and partition, you will be asked to choose the index of
 	<img src="../../../res/img_tasks/tools/isocreator/dt_pe/dt_pe_image_chooser.png" />
 </p>
 
-You can also see a bit more information about the image by typing `INFO` and pressing Enter:
+You can also see more information about the image by typing `INFO` and pressing Enter:
 
 <p align="center">
 	<img src="../../../res/img_tasks/tools/isocreator/DT_PE_ImageInfo.png" />
@@ -147,7 +147,9 @@ The **Driver Installation Module** (DIM) is a quick and easy way of adding devic
 	<img src="../../../res/img_tasks/tools/isocreator/dim/DIM_MainScreen.png" />
 </p>
 
-While full functionality is achieved with the DISMTools Preinstallation Environment, you can still use the DIM in every Preinstallation Environment. Do note, however, that this is only compatible with the 32-bit and 64-bit desktop architectures (x86 and amd64).
+While full functionality is achieved with the DISMTools Preinstallation Environment, you can still use the DIM in every Preinstallation Environment. This is compatible with the x86, amd64, and arm64 architectures.
+
+*NOTE: arm64 support for the DIM arrived in version 0.6.2.*
 
 #### Usage
 

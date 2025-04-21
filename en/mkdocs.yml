@@ -42,6 +42,10 @@ nav:
     - Overview: img_tasks/appx/appx.md
     - Adding AppX packages: img_tasks/appx/add_provisionedappxpackage.md
     - Removing AppX packages: img_tasks/appx/remove_provisionedappxpackage.md
+  - Edition servicing:
+    - Overview: img_tasks/editions/editions.md
+    - Upgrading an image to a higher edition: img_tasks/editions/set_edition.md
+    - Setting the product key: img_tasks/editions/set_productkey.md
   - Languages and regional servicing:
     - Setting keyboard layered drivers: img_tasks/langs/set_layereddriver.md
   - Capabilities:

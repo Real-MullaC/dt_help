@@ -123,7 +123,6 @@ You can either write the post-installation scripts from scratch, or import exist
 
 Notes:
 
-- Support for Batch scripts will be added in a future update
 - After scripts are done, you can restart Windows Explorer in case you have applied personalization changes, for example, via the Registry
 
 In the **Component Settings** page, you can specify placeholders for additional components that you want to add to your answer file for specific passes. You will have to fill them in manually after the answer file is generated:
