@@ -11,6 +11,14 @@ If you want to know about something else, keep on reading.
 
 ## First steps
 
+### The DISMTools tour
+
+DISMTools 0.7 introduces a new tour that you can follow in order to perform basic tasks. This tour features text and video forms, and focuses on an example procedure to create a customized Windows image.
+
+You can access it [here](https://dismtools.com/tour)		<!-- Let's use a custom tour and hope that address redirection works as expected - this is a non-existent site (yet!) -->
+
+The existing tour will be kept for legacy purposes for now. Keep reading if you want to follow this instead.
+
 After installation has completed, you may run the program. The following steps are recommended to be done in order to get started
 
 ### Creating your first project
