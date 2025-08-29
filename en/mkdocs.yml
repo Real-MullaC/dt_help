@@ -2,6 +2,12 @@ site_name: DISMTools Help Documentation
 theme:
   name: readthedocs
   sticky_navigation: False
+  prev_next_buttons_location: none
+  logo: logo.png
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+markdown_extensions:
+  - mdx_math  
 nav:
 - Home: index.md
 - Getting started: getting_started/start.md
@@ -63,10 +69,24 @@ nav:
   - Image conversion: img_tasks/tools/wim2esd.md
   - SWM file merger: img_tasks/tools/swm2wim.md
   - DISM Configuration List Editor: img_tasks/tools/configlisteditor.md
-  - ISO creation tools: img_tasks/tools/isocreator.md
+  - ISO creation tools:
+    - Overview: img_tasks/tools/isocreator.md
+    - Creating ISO files: img_tasks/tools/isocreator/isocreate.md
+    - Installing the operating system:
+      - Local installations: img_tasks/tools/isocreator/install/localinstall.md
+      - Network-based installations:
+        - Overview: img_tasks/tools/isocreator/install/netinst/pxehelpers.md
+        - Creating a basic network setup (Hyper-V): img_tasks/tools/isocreator/install/netinst/setup.md
+        - Windows Deployment Services (WDS) Helper: img_tasks/tools/isocreator/install/netinst/wds.md
+      - External Tools:
+        - Driver Installation Module: img_tasks/tools/isocreator/exttools/dim.md
+        - Extensibility Suite: img_tasks/tools/isocreator/exttools/dtpe_es.md
   - Image registry control panel: img_tasks/tools/regcpl.md
   - Unattended answer files:
     - Overview: img_tasks/unattend/unattend.md
     - Unattended answer file manager: img_tasks/unattend/unatt_man.md
     - Unattended answer file creator: img_tasks/unattend/unatt_create.md
     - Applying unattended answer files: img_tasks/unattend/unatt_apply.md
+  - External tools:
+    - Creating your themes: img_tasks/exttools/themedesigner.md
+    - Viewing diagnostic logs: img_tasks/exttools/dynaviewer.md
