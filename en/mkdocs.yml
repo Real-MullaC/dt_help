@@ -65,7 +65,6 @@ nav:
     - Importing drivers: img_tasks/drivers/import_driver.md
     - Removing drivers: img_tasks/drivers/remove_driver.md
 - Tools:
-  - SysPrep Preperator: img_tasks/tools/sysprep.md
   - Mounted image manager: img_tasks/tools/mimgmgr.md
   - Image conversion: img_tasks/tools/wim2esd.md
   - SWM file merger: img_tasks/tools/swm2wim.md
@@ -82,6 +81,7 @@ nav:
       - External Tools:
         - Driver Installation Module: img_tasks/tools/isocreator/exttools/dim.md
         - Extensibility Suite: img_tasks/tools/isocreator/exttools/dtpe_es.md
+        - SysPrep Preparation Tool: img_tasks/tools/isocreator/exttools/sysprep.md
   - Image registry control panel: img_tasks/tools/regcpl.md
   - Unattended answer files:
     - Overview: img_tasks/unattend/unattend.md

@@ -1,7 +1,7 @@
 # SysPrep Preparator
 
 <p align="center">
-	<img src="../../../logo.png" />
+	<img src="../../../../../logo.png" />
 </p>
 
 Sysprep Preparator is a Windows tool that helps allow you to prepare your system to allow you to capture an image for you to put into your ISO.
