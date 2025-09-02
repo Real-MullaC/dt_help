@@ -65,6 +65,7 @@ nav:
     - Importing drivers: img_tasks/drivers/import_driver.md
     - Removing drivers: img_tasks/drivers/remove_driver.md
 - Tools:
+  - SysPrep Preperator: img_tasks/tools/sysprep.md
   - Mounted image manager: img_tasks/tools/mimgmgr.md
   - Image conversion: img_tasks/tools/wim2esd.md
   - SWM file merger: img_tasks/tools/swm2wim.md
