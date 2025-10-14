@@ -124,6 +124,7 @@ You can either write the post-installation scripts from scratch, or import exist
 Notes:
 
 - After scripts are done, you can restart Windows Explorer in case you have applied personalization changes, for example, via the Registry
+- If you are new to the world of post-installation scripts, you can go with new Starter Scripts. Go to the starter script reference section (at the bottom of this page) for more information
 
 In the **Component Settings** page, you can specify placeholders for additional components that you want to add to your answer file for specific passes. You will have to fill them in manually after the answer file is generated:
 
@@ -176,6 +177,131 @@ Downloading this version will take some time, depending on your network connecti
 </p>
 
 Finally, like with the **Windows Image Explorer**, you can use the generator program separately. You can check out its repository [here](https://github.com/CodingWonders/UnattendGen)
+
+## Starter Script Reference
+
+Currently, there are 9 starter scripts available:
+
+| Script Name | Stage | Description |
+|:------------|:-----:|:------------|
+| Close First Logon Animation | During System Configuration | Closes the first logon animation that appears when a user logs on for the first time |
+| Set OEM Information | During System Configuration | Sets the OEM information of the system, like the manufacturer, model, or support information |
+| Invoke WinUtil Configuration | When the first user logs on | Invokes WinUtil with a configuration file to apply personalization settings |
+| Set Personalization Settings | When the first user logs on | Sets personalization settings, like the desktop wallpaper, accent color, or color modes |
+| Set Registered Owner and Organization | When the first user logs on | Sets the registered owner and organization of the system |
+| Set up a custom wallpaper | When the first user logs on | Sets a custom wallpaper for the desktop |
+| Update Microsoft Store apps | When the first user logs on | Updates all Microsoft Store apps to their latest versions, if available |
+| Disable Second Chance OOBE | When users log on for the first time | Disables the Second Chance OOBE (SCOOBE) |
+| Disable Windows Notification Sources | When users log on for the first time | Disables various Windows notifications given sources |
+
+Some scripts allow you to configure settings after you import them:
+
+### Close First Logon Animation
+
+**Script language**: Batch
+
+No settings available.
+
+### Set OEM Information
+
+**Script language**: Batch
+
+| Option | Required? | Description |
+|:------:|:---------:|:------------|
+| `OEM_Manufacturer` | Yes | The manufacturer of the system |
+| `OEM_Model` | No | The model of the system |
+| `OEM_SupportURL` | No | The support URL of the system |
+| `OEM_SupportPhone` | No | The support phone number of the system |
+| `OEM_SupportHours` | No | The support hours of the system |
+| `OEM_Logo` | No | The path to the OEM logo of the system. Must be a BMP file |
+
+### Invoke WinUtil Configuration
+
+**Script language**: PowerShell
+
+You need to add your configuration file to the root of the image's mount directory, as `winutil-config.json`. You can learn more about configuration files [here](https://winutil.christitus.com/userguide/automation/).
+
+### Set Personalization Settings
+
+**Script language**: PowerShell
+
+| Option | Description |
+|:------:|:------------|
+| `$lightThemeSystem` | If 0, sets the system theme to dark mode. If 1, sets it to light mode |
+| `$lightThemeApps` | If 0, sets the app theme to dark mode. If 1, sets it to light mode |
+| `$accentColorOnStart` | If 0, disables accent color on Start, taskbar and action center. If 1, enables it |
+| `$enableTransparency` | If 0, disables transparency effects (Acrylic/Mica). If 1, enables it |
+| `$htmlAccentColor` | Sets the accent color of the system. Must be a hex value |
+
+### Set Registered Owner and Organization
+
+**Script language**: Batch
+
+| Option | Required? | Description |
+|:------:|:---------:|:------------|
+| `AutoUserInfo` | Yes | Determines whether to set registered owner as the name of the currently signed user (0 or 1) |
+| `RegisteredUser` | Yes | The registered owner of the system |
+| `RegisteredOrg` | No | The registered organization of the system |
+
+**Notes:**
+
+- If `AutoUserInfo` is set to 1 and a Microsoft account is used, the registered owner will be set to the first 5 letters of the email address
+- This script should not be used when users log on for the first time because user information will change every time a new user logs on for the first time if the following conditions are met:
+    - `AutoUserInfo` is set to 1
+    - More than one user account is created, either from the answer file or after OOBE
+
+### Set up a custom wallpaper
+
+**Script language**: PowerShell
+
+Place the wallpaper in any path inside the Windows image. Then, replace `<path to your wallpaper here>` with the actual path to your wallpaper starting from the mount directory of the Windows image. For example:
+
+| Path in mount directory | Actual Path |
+|:-----------------------:|:-----------:|
+| `C:\mount\wallpaper.jpg` | `$env:SYSTEMDRIVE\wallpaper.jpg` |
+| `C:\mount\Pictures\wallpaper.png` | `$env:SYSTEMDRIVE\Pictures\wallpaper.png` |
+
+If the image file does not exist in the target image and continue with the script, you will see a black desktop background.
+
+### Update Microsoft Store apps
+
+**Script language**: Batch
+
+No settings available.
+
+### Disable Second Chance OOBE
+
+**Script language**: Batch
+
+No settings available.
+
+### Disable Windows Notification Sources
+
+**Script language**: Batch
+
+By default, the script will disable the following notification sources:
+
+- Suggested
+- Startup App Notification
+- OneDrive
+- Microsoft Account Health
+
+These entries will be added to list of notification sources, in Settings -> System -> Notifications. To add more entries to the list, do the following:
+
+```batch
+FOR %%a IN (Windows.SystemToast.Suggested ... Windows.SystemToast.AccountHealth <your source here>) DO (
+    reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings\%%a" /f
+    reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings\%%a" /v Enabled /t REG_DWORD /d 0 /f
+)
+```
+
+Notes for your source:
+
+- If your source contains spaces, surround it with quotes
+
+### Change History
+
+- The 9 starter scripts were added in DISMTools 0.7.1
 
 ## Acknowledgements
 
