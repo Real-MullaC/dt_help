@@ -178,6 +178,57 @@ Downloading this version will take some time, depending on your network connecti
 
 Finally, like with the **Windows Image Explorer**, you can use the generator program separately. You can check out its repository [here](https://github.com/CodingWonders/UnattendGen)
 
+## Active Directory Domain Services domain join
+
+If the unattended answer file and, by extension, the Windows image, will be targeted to a fleet of computers in a domain; you can configure domain join settings using the **Domain Services Wizard**.
+
+You can access the Domain Services Wizard by clicking the **Join target device to domain...** button that will appear in the following pages:
+
+- System Configuration
+- User Accounts
+- Component Settings
+
+<p align="center">
+    <img src="../../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_jointargetdevice.png" />
+</p>
+
+You will first need to configure target DNS server information: the primary domain suffix, the name of the NIC (*Interface Alias*), and DNS server addresses.
+
+You can specify the interface alias in one of 2 ways:
+
+- By picking from available NICs in the current system. To choose this, it is recommended that you verify if you are running DISMTools in one of the devices in the domain, unless your current device also has a NIC with the same name as the target devices
+- By typing the name of the NIC manually
+
+When you pick the NIC from the list, every other field (PDS, DNS server addresses) will be filled in automatically given the current configuration of the NIC. However, you can still change these fields if you need to use different values.
+
+For DNS server addresses, you need to put one address per line. If you want to check if the syntax of the addresses is correct, click **Verify DNS Address Syntax**.
+
+One example of filled-in information is shown below:
+
+<p align="center">
+    <img src="../../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dnsinfo.png" />
+</p>
+
+After configuring DNS server information, you will need to configure information related to the initial user with which the target device will join the domain.
+
+<p align="center">
+    <img src="../../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dsinfo.png" />
+</p>
+
+- If the device is part of a domain, the domain name will be filled in automatically and you will be able to pick users from available organizational units (OUs) in the domain. However, you can still specify different information manually.
+- If the device is not part of a domain, you will need to specify all information manually.
+
+To pick a user from the domain:
+
+1. Select the OU from the drop-down list. After selecting the OU, the list of users in the OU will be populated automatically
+2. Select the user from the list
+
+Both the UPN and the SAM account names will be filled in automatically. When specifying this information manually, you will need to specify the user part of the UPN. For instance, `johndoe`.
+
+Finally, specify the password of the user. Since DISMTools will **NOT** check if the password is correct, make sure that you type it correctly.
+
+You've finished the Domain Services Wizard. When you get to the components screen, you will see that the necessary components and settings have been added to your answer file.
+
 ## Starter Script Reference
 
 Currently, there are 9 starter scripts available:
