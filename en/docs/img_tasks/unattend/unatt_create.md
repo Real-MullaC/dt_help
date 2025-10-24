@@ -231,12 +231,13 @@ You've finished the Domain Services Wizard. When you get to the components scree
 
 ## Starter Script Reference
 
-Currently, there are 9 starter scripts available:
+Currently, there are 10 starter scripts available:
 
 | Script Name | Stage | Description |
 |:------------|:-----:|:------------|
 | Close First Logon Animation | During System Configuration | Closes the first logon animation that appears when a user logs on for the first time |
 | Set OEM Information | During System Configuration | Sets the OEM information of the system, like the manufacturer, model, or support information |
+| Set Quick Machine Recovery Settings | During System Configuration | Configures Quick Machine Recovery (QMR) settings on the target system |
 | Invoke WinUtil Configuration | When the first user logs on | Invokes WinUtil with a configuration file to apply personalization settings |
 | Set Personalization Settings | When the first user logs on | Sets personalization settings, like the desktop wallpaper, accent color, or color modes |
 | Set Registered Owner and Organization | When the first user logs on | Sets the registered owner and organization of the system |
@@ -265,6 +266,24 @@ No settings available.
 | `OEM_SupportPhone` | No | The support phone number of the system |
 | `OEM_SupportHours` | No | The support hours of the system |
 | `OEM_Logo` | No | The path to the OEM logo of the system. Must be a BMP file |
+
+### Set Quick Machine Recovery Settings
+
+**Script language**: Batch
+
+| Option | Required? | Description |
+|:------:|:---------:|:------------|
+| `QMR_CloudRemediation` | Yes | Enables (1) or disables (0) cloud remediation for QMR |
+| `QMR_AutoRemediation` | Yes | Enables (1) or disables (0) automatic remediation for QMR |
+| `QMR_NextCheckMinutes` | Yes | Sets the number of minutes before the next QMR check |
+| `QMR_NextRebootHours` | Yes | Sets the number of hours before the next reboot |
+| `QMR_Headless` | Yes | Enables (1) or disables (0) headless mode for QMR |
+
+**Notes:**
+
+- Options 3 and 4 will only be applied if automatic remediation is enabled
+- Cloud Remediation allows the system to scan for solutions on WinRE launch
+- Auto Remediation allows the system to continue scanning for solutions if the first attempt fails
 
 ### Invoke WinUtil Configuration
 
@@ -352,7 +371,24 @@ Notes for your source:
 
 ### Change History
 
-- The 9 starter scripts were added in DISMTools 0.7.1
+- DISMTools 0.7.1 Preview 4:
+    - Added:
+        - Disable Windows Notification Sources
+        - Disable Second Chance OOBE
+        - Set OEM Information
+        - Set Registered Owner and Organization
+        - Set Quick Machine Recovery Settings
+    - Modified:
+        - Invoke WinUtil Configuration: reduced ping count to server
+- DISMTools 0.7.1 Preview 3:
+    - Added:
+        - Skip OOBE First Logon Animation
+        - Personalize User Environment
+- DISMTools 0.7.1 Preview 2:
+    - Added:
+        - Set up a custom wallpaper
+        - Update Microsoft Store apps
+        - Invoke WinUtil Configuration
 
 ## Acknowledgements
 
