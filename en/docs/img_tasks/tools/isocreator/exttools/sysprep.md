@@ -1,9 +1,5 @@
 # Sysprep Preparation Tool
 
-<p align="center">
-	<img src="../../../../../logo.png" />
-</p>
-
 The Sysprep Preparation Tool is a utility included with DISMTools 0.7.1 and later versions that prepares a reference computer for Sysprep generalization. This is useful for system administrators who are not using Microsoft Configuration Manager, or a similar solution, and want a Windows image with preinstalled applications.
 
 ## Usage
