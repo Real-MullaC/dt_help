@@ -38,4 +38,4 @@ When saving variables, backups of both machine and user scope variables are save
 2. Merge the `.reg` files in your desktop by double-clicking them
 3. Unload the `SYSTEM` and `NTUSER.DAT` hives from the control panel and commit the changes
 
-While restoring the backup, you may see an error. This is normal, and many services will be restored correctly despite the error.
+While restoring the backup, you may see an error. This is normal, and many variables will be restored correctly despite the error. Of course, you can always look at the REG files themselves and use the service manager to restore the variables.
