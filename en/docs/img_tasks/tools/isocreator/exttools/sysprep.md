@@ -32,7 +32,7 @@ Now, go ahead and install the applications you want to have preinstalled in your
 
 - Try to avoid Microsoft Store applications as they cause Sysprep to fail. If a desktop application installs a Microsoft Store application (for example, to provide context menu integration with Windows 11), remove said application before running the tool
 	- In that similar vein, avoid using WinGet to install applications. The `winget` source is a Microsoft Store application
-	- Some applications, like Visual Studio Code, come in both user and machine-wide installation variants. Always use the machine-wide installation variant, if available
+- Some applications, like Visual Studio Code, come in both user and machine-wide installation variants. Always use the machine-wide installation variant, if available
 
 ### Launching the Sysprep Preparation Tool
 
