@@ -89,7 +89,7 @@ Finally, wait for the tool to complete its work:
 	<img src="../../../../../res/img_tasks/tools/isocreator/syspreppreparator/SysprepPreparator_Finish.png" />
 </p>
 
-After your computer shuts down, you can capture its image with your preferred method. If you want to make further modifications in an offline manner, boot into the DISMTools Preinstallation Environment and capture the entire drive to an image using the **Image Capture** Administration Script. [Refer to the Command-line Administration Script Reference for more information on this script.](../../cmdline/scriptref).
+After your computer shuts down, you can capture its image with your preferred method. If you want to make further modifications in an offline manner, boot into the DISMTools Preinstallation Environment and capture the entire drive to an image using the **Image Capture** Administration Script. [Refer to the Command-line Administration Script Reference for more information on this script](../../cmdline/scriptref).
 
 ## Related content
 

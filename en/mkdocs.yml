@@ -86,6 +86,8 @@ nav:
         - Overview: img_tasks/tools/isocreator/cmdline/cmdline.md
         - Administration Script Reference: img_tasks/tools/isocreator/cmdline/scriptref.md
   - Image registry control panel: img_tasks/tools/regcpl.md
+  - System service manager: img_tasks/tools/servicemgr.md
+  - System environment variable manager: img_tasks/tools/envvarmgr.md
   - Unattended answer files:
     - Overview: img_tasks/unattend/unattend.md
     - Unattended answer file manager: img_tasks/unattend/unatt_man.md
