@@ -3,7 +3,7 @@
 The System Service Manager lets you view and modify information about the services in a Windows image. Use the Manager to modify start type properties, or to simply view information about them.
 
 <p align="center">
-    <img src="../../../../../res/img_tasks/tools/servicemgr/servicemgr.png" />
+    <img src="../../../res/img_tasks/tools/servicemgr/servicemgr.png" />
 </p>
 
 You can access the System Service Manager by going to *Tools -> Manage system services*.
