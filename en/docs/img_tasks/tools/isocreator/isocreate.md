@@ -12,8 +12,6 @@ With DISMTools 0.6.1 and later, you can also specify 2 options:
 - **Copy to Ventoy drives** lets you take advantage of your [Ventoy](https://ventoy.net/en) drives for operating system installation. After the ISO is generated, it will be copied automatically to all Ventoy drives you have plugged into your computer
 - **Use newly-signed boot binaries** will make the ISO files that you create ship with EFI boot binaries signed with the *Windows UEFI CA 2023* code-signing certificate. This is not checked by default because of reasons that are mentioned later in this document
 
-**VERY, VERY IMPORTANT:** recent reports indicate that Windows 11 24H2 updates KB5063878 and KB5062660 can cause issues with certain SSD drives that may lead to data loss when writing big files. Either uninstall either update or use a different drive to create your ISO file. If you can't uninstall this update, be cautious. These issues are manifested when around 50 GB of data is written to the drive.
-
 This process can take between 5 to 10 minutes, depending on the size of the Windows image and the speed of your computer's disk drive.
 
 #### Windows UEFI CA 2023 information
