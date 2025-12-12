@@ -4,7 +4,7 @@ To create a new ISO file, do the following:
 
 1. **Pick your Windows image.** You can either browse through your computer for a Windows image to copy, pick an image from the pop-up mounted image picker, or pick the currently loaded one. Once you pick a Windows image, you will see information about each index in the image
 2. **Choose the architecture for the Preinstallation Environment** by using the architecture list. It is recommended to pick the one that the image supports
-3. (Optional, new in DISMTools 0.5.1) **Choose an unattended answer file to apply**
+3. (Optional) **Choose an unattended answer file to apply**
 4. **Choose the target location of the ISO file.** If the target image exists, you will be asked if you want to replace it when clicking Create
 
 With DISMTools 0.6.1 and later, you can also specify 2 options:
@@ -16,9 +16,13 @@ This process can take between 5 to 10 minutes, depending on the size of the Wind
 
 #### Windows UEFI CA 2023 information
 
-The Windows UEFI CA 2023 certificate is now used to sign new EFI boot binaries. This is present in versions 10.1.26100.2454 and later of the Windows ADK as an option for ISO file creation.
+New EFI boot binaries are signed with the Windows UEFI CA 2023 certificate. These boot binaries replace previous ones signed with a certificate authority from 2011. This certificate authority will expire in June 2026.
 
-Some computers may not boot correctly using these new EFI boot binaries, and compatibility may depend on whether or not a device that uses UEFI contains this certificate. You can check if your computer contains this certificate by running the following PowerShell command as an administrator:
+EFI boot binaries signed with the 2023 CA are already included in computers manufactured since 2024. These are also present in versions 10.1.26100.2454 and later of the Windows ADK and are an option for ISO file creation. These **are recommended** as well to avoid boot issues if a system has had updates to its Secure Boot revocation lists.
+
+You can determine whether a UEFI system with Secure Boot features support for the 2023 CA in 2 ways: via the Registry and PowerShell.
+
+- To verify in PowerShell, run this command:
 
 ```powershell
 [System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI db).bytes) -match 'Windows UEFI CA 2023'
@@ -29,11 +33,29 @@ Some computers may not boot correctly using these new EFI boot binaries, and com
     <p align="center"><i>Example output of command. Source: Microsoft Tech Community</i></p>
 </p>
 
-If the command returns `True`, your computer has this certificate. Otherwise, you may need updates to add support for this certificate. If you have doubts regarding the compatibility of your computer with this certificate, it is recommended to leave the option unchecked.
+This command will return either `True` or `False`, depending on whether or not you have this certificate installed.
 
-BIOS-based systems are not affected by this change.
+- To verify in the Registry, do the following:
+    1. Open the Registry Editor, then go to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecureBoot\Servicing`
+    2. Look for a value called "UEFICA2023Status"
 
-You can learn more here: [Revoking vulnerable Windows boot managers](https://techcommunity.microsoft.com/blog/windows-itpro-blog/revoking-vulnerable-windows-boot-managers/4121735)
+On systems with the UEFI CA 2023 certificate installed, this value will be set to "Updated":
+
+<p align="center">
+    <img src="../../../../res/img_tasks/tools/isocreator/uefica2023/uefica2023status.png" />
+</p>
+
+You can learn more here: [Revoking vulnerable Windows boot managers](https://techcommunity.microsoft.com/blog/windows-itpro-blog/revoking-vulnerable-windows-boot-managers/4121735); [Secure Boot playbook for certificates expiring in 2026](https://techcommunity.microsoft.com/blog/Windows-ITPro-blog/secure-boot-playbook-for-certificates-expiring-in-2026/4469235)
+
+In DISMTools 0.7.2 and later, you may see the following warning:
+
+<p align="center">
+    <img src="../../../../res/img_tasks/tools/isocreator/uefica2023/uefica2023warning.png" />
+</p>
+
+This warning will show if you're creating an ISO file on a UEFI system with Secure Boot enabled that does not support the UEFI CA 2023 binaries; if you check the "Use newly-signed boot binaries" option.
+
+Both Microsoft and OEMs are providing both software and firmware updates to computers in order to add support for the 2023 binaries and to update the revocation lists. To fix this problem, make sure your OS and your firmware are updated. Alternatively, you might be able to continue *without* using the updated boot binaries, but this may cause new systems to not boot to the resulting ISO files if they have revoked the 2011 certificates.
 
 ### Continuing the installation
 
