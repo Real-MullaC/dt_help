@@ -238,6 +238,7 @@ Currently, there are 10 starter scripts available:
 | Close First Logon Animation | During System Configuration | Closes the first logon animation that appears when a user logs on for the first time |
 | Set OEM Information | During System Configuration | Sets the OEM information of the system, like the manufacturer, model, or support information |
 | Set Quick Machine Recovery Settings | During System Configuration | Configures Quick Machine Recovery (QMR) settings on the target system |
+| Configure folders for Git integration | When the first user logs on | Configures folders for Git source control integration in the File Explorer |
 | Invoke WinUtil Configuration | When the first user logs on | Invokes WinUtil with a configuration file to apply personalization settings |
 | Set Personalization Settings | When the first user logs on | Sets personalization settings, like the desktop wallpaper, accent color, or color modes |
 | Set Registered Owner and Organization | When the first user logs on | Sets the registered owner and organization of the system |
@@ -245,6 +246,12 @@ Currently, there are 10 starter scripts available:
 | Update Microsoft Store apps | When the first user logs on | Updates all Microsoft Store apps to their latest versions, if available |
 | Disable Second Chance OOBE | When users log on for the first time | Disables the Second Chance OOBE (SCOOBE) |
 | Disable Windows Notification Sources | When users log on for the first time | Disables various Windows notifications given sources |
+
+In DISMTools 0.7.2, you can view more information about these starter scripts more easily by using the new **Starter Script Browser**:
+
+<p align="center">
+    <img src="../../../res/img_tasks/unattend/unatt_creator/unatt_script_browser.png" />
+</p>
 
 Some scripts allow you to configure settings after you import them:
 
@@ -284,6 +291,21 @@ No settings available.
 - Options 3 and 4 will only be applied if automatic remediation is enabled
 - Cloud Remediation allows the system to scan for solutions on WinRE launch
 - Auto Remediation allows the system to continue scanning for solutions if the first attempt fails
+
+### Configure folders for Git integration
+
+**Script language**: PowerShell
+
+To add new entries to the list of folders for which to show VCS information, add them to the following array, like this:
+
+```powershell
+$gitFolders = @(
+	"$env:SYSTEMDRIVE\dev\repo1",
+    "$env:SYSTEMDRIVE\dev\repo2"
+)
+```
+
+Do note that, in order for the Git view to show, the system needs the *Windows Advanced Settings* application.
 
 ### Invoke WinUtil Configuration
 
@@ -371,6 +393,15 @@ Notes for your source:
 
 ### Change History
 
+- DISMTools 0.7.2 Preview 3:
+    - Added:
+        - Configure Git folders for File Explorer
+- DISMTools 0.7.2 Preview 2:
+    - Added:
+        - Verbose Status Messages
+    - Modified:
+        - Disable Windows Notification Sources: added Copilot notifications to blocklist
+        - Set Quick Machine Recovery Settings: added value checking
 - DISMTools 0.7.1 Preview 4:
     - Added:
         - Disable Windows Notification Sources
