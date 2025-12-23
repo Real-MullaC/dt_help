@@ -40,6 +40,10 @@ The System Service Manager displays the following information about each service
     - Lists services that this service depends on
 
     For both service dependencies and dependents, you will see the service name, the display name, and the service type.
+    
+- **Service Groups** tab:
+    - Lists the group the service belongs to, if any, and other services in the same group
+    - Lists registered Service Host (svchost) groups
 
 ## Modifying a service
 
