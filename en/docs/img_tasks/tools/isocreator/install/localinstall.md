@@ -6,6 +6,12 @@ You can start the installation of your operating system in 2 ways:
 - By starting the installation from within a full Windows environment (DISMTools 0.6.1 and later), or
 - By booting to the boot image of the installation disc file via the **Preboot eXecution Environment** (PXE) (DISMTools 0.7 and later)
 
+In DISMTools 0.7.1 and later, performing these tasks has become much easier thanks to a new autorun application included in the root of the installation media:
+
+<p align="center">
+    <img src="../../../../../res/img_tasks/tools/isocreator/autorun/autorun_mainscreen.png" />
+</p>
+
 ## Starting from a full Windows environment
 
 DISMTools 0.6.1 and later come with a program that prepares your computer for OS installation. This is called *HotInstall*, and the process of computer preparation is as follows:
