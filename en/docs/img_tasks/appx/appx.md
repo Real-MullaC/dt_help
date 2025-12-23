@@ -20,13 +20,13 @@ However, the placement of some files varies depending on the **format** of the a
 - `.appx` and `.msix` packages contain the manifest on the root of the package, as `AppxManifest.xml`
 
 <p align="center">
-	<img src="../../../res/img_tasks/appx/appxmanifest.png" />
+	<img src="../../res/img_tasks/appx/appxmanifest.png" />
 </p>
 
 - `.appxbundle` and `.msixbundle` packages store the manifest as `AppxBundleManifest.xml`, under the `AppxMetadata` directory
 
 <p align="center">
-	<img src="../../../res/img_tasks/appx/appxbundlemanifest.png" />
+	<img src="../../res/img_tasks/appx/appxbundlemanifest.png" />
 </p>
 
 We are interested in the manifest file because it **provides information about the application**: its name, its publisher info, its version and, most importantly, its dependencies.
@@ -36,7 +36,7 @@ We are interested in the manifest file because it **provides information about t
 Let's look at a manifest file. This is the manifest file of [Rayman Jungle Run](https://en.wikipedia.org/wiki/Rayman_Origins#Rayman_Jungle_Run):
 
 <p align="center">
-	<img src="../../../res/img_tasks/appx/inside_manifest.png" />
+	<img src="../../res/img_tasks/appx/inside_manifest.png" />
 </p>
 
 If you can't read the selected text, here it is in code view:
@@ -48,7 +48,7 @@ If you can't read the selected text, here it is in code view:
 This is the information you'll see when adding AppX packages with DISMTools:
 
 <p align="center">
-	<img style="height: 75px" src="../../../res/img_tasks/appx/app_info.png" />
+	<img style="height: 75px" src="../../res/img_tasks/appx/app_info.png" />
 </p>
 
 The aforementioned line of XML code can be located on line 3 of the manifest, or on line 10 if a comment begins on line 3.
@@ -56,7 +56,7 @@ The aforementioned line of XML code can be located on line 3 of the manifest, or
 Now, **how can DISMTools detect the store logo asset**? By using the manifest file. Shortly after the XML code mentioned, a `<Properties>` tag begins, which contains information about the package **display name** (or how it will be shown on the start menu), the display name of the **publisher**, and the **location of the store logo asset**. Based on the last property, DISMTools goes through the AppX package and extracts the store logo asset, if it can. Otherwise, it will show a generic icon.
 
 <p align="center">
-	<img style="height: 486px" src="../../../res/img_tasks/appx/logoasset.png" />
+	<img style="height: 486px" src="../../res/img_tasks/appx/logoasset.png" />
 </p>
 
 The location of the store logo asset also varies depending on the format of the application. In `.appxbundle` and `.msixbundle` packages, it is stored in another AppX package inside its parent package, in which the store logo asset can be extracted from the same location.
@@ -78,17 +78,17 @@ What we're interested in is the `<MainBundle>` section, which defines the packag
 The `Uri` property is what matters. DISMTools versions from 0.3.2 onwards read these files, detect a URL, and perform a file download.
 
 <p align="center">
-	<img src="../../../res/img_tasks/appx/appinstaller_down.png" />
+	<img src="../../res/img_tasks/appx/appinstaller_down.png" />
 </p>
 
 You can view the reference of App Installer files [here](https://learn.microsoft.com/en-us/uwp/schemas/appinstallerschema/schema-root).
 
 ## Available tasks
 
-- [Adding provisioned AppX packages](../add_provisionedappxpackage)
-- [Getting AppX package information](../../info/appxpkg_info)
-- [Removing provisioned AppX packages](../remove_provisionedappxpackage)
+- [Adding provisioned AppX packages](./add_provisionedappxpackage.md)
+- [Getting AppX package information](../info/appxpkg_info.md)
+- [Removing provisioned AppX packages](./remove_provisionedappxpackage.md)
 
 <p align="center">
-	<img src="../../../res/img_tasks/appx/appx.png" />
+	<img src="../../res/img_tasks/appx/appx.png" />
 </p>

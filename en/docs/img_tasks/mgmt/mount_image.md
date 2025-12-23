@@ -1,7 +1,7 @@
 # Mounting an image
 
 <p align="center">
-	<img src="../../../res/getting_started/mount_an_image.png" />
+	<img src="../../res/getting_started/mount_an_image.png" />
 </p>
 
 One essential task to perform is mounting a Windows image, and DISMTools can assist you in performing this process.
@@ -16,7 +16,7 @@ One essential task to perform is mounting a Windows image, and DISMTools can ass
 
 If you specify an SWM or ESD file when mounting an image, DISMTools will detect it and perform the following:
 
-- If the source image is a SWM file, the program loads the [SWM file merger](../../tools/swm2wim) dialog and populates all required fields
-- If the source image is an ESD file, the program loads the [image conversion](../../tools/wim2esd) dialog and populates all required fields
+- If the source image is a SWM file, the program loads the [SWM file merger](../tools/swm2wim.md) dialog and populates all required fields
+- If the source image is an ESD file, the program loads the [image conversion](../tools/wim2esd.md) dialog and populates all required fields
 
 In either case, you can simply click OK to begin the required process, or can review all options. After performing said process, this dialog is shown again with the source image field populated.

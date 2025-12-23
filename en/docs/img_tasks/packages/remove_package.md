@@ -1,7 +1,7 @@
 # Removing packages
 
 <p align="center">
-	<img src="../../../res/img_tasks/packages/remove_package.png" />
+	<img src="../../res/img_tasks/packages/remove_package.png" />
 </p>
 
 With DISMTools you can remove packages from a Windows image or installation. This action can be accessed by clicking Commands > OS packages > Remove package..., or by clicking the "Remove package..." button.

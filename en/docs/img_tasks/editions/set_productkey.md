@@ -1,7 +1,7 @@
 # Setting the image product key
 
 <p align="center">
-    <img src="../../../res/img_tasks/editions/set_imagekey.png" />
+    <img src="../../res/img_tasks/editions/set_imagekey.png" />
 </p>
 
 With DISMTools you can set the product key of a Windows image. This action can be accessed by clicking Commands > Windows editions > Set product key...

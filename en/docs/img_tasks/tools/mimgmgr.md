@@ -1,7 +1,7 @@
 # Mounted image manager
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/mimgmgr/mimgmgr.png" />
+	<img src="../../res/img_tasks/tools/mimgmgr/mimgmgr.png" />
 </p>
 
 The mounted image manager allows you to manage your mounted images easily. You can perform the following tasks with this tool:
@@ -14,7 +14,7 @@ The mounted image manager allows you to manage your mounted images easily. You c
 - Load a mount directory to projects with no images loaded
 - Get image file information
 - Save image information
-- [Create ISO files](../isocreator)
+- [Create ISO files](./isocreator.md)
 
 ## Operations
 
@@ -23,10 +23,10 @@ The mounted image manager allows you to manage your mounted images easily. You c
 You can unmount a Windows image saving changes, discarding them, or with more settings; the last of which will open the image unmount dialog:
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/mimgmgr/img_unmount.png" />
+	<img src="../../res/img_tasks/tools/mimgmgr/img_unmount.png" />
 </p>
 
-For read-only mounted images, clicking this button will directly unmount the image discarding changes. For more information, go to the [image unmount](../../mgmt/unmount_image) page.
+For read-only mounted images, clicking this button will directly unmount the image discarding changes. For more information, go to the [image unmount](../mgmt/unmount_image.md) page.
 
 ### Reloading the servicing session/repairing the component store
 
@@ -45,7 +45,7 @@ This will open the mount directory in File Explorer, allowing you to browse the 
 
 ### Removing volume images
 
-If the mounted image contains more than 1 index, you are able to remove volume images from it easily. Specify the indexes to remove, and click OK. For more information, refer to the [volume image removal](../../mgmt/delete_image) page.
+If the mounted image contains more than 1 index, you are able to remove volume images from it easily. Specify the indexes to remove, and click OK. For more information, refer to the [volume image removal](../mgmt/delete_image.md) page.
 
 ### Loading mounted images
 
@@ -64,7 +64,7 @@ DISMTools 0.3 introduces a command-line version of the mounted image manager wit
 You can access the CLI version of the mounted image manager through the Command Console in the Tools menu by typing `mimgmgr`. You will then see an overview of the mounted images:
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_defaultview.png" />
+	<img src="../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_defaultview.png" />
 </p>
 
 ### Usage
@@ -72,13 +72,13 @@ You can access the CLI version of the mounted image manager through the Command 
 When you load this version of the mounted image manager, you need to **mark an image for management**. You can easily do this by pressing the M key and selecting an image using its number. If the list was modified in the background, you'll see an updated list.
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_mark_image.png" />
+	<img src="../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_mark_image.png" />
 </p>
 
 After marking an image, you can then perform management actions with it.
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_marked_image.png" />
+	<img src="../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_marked_image.png" />
 </p>
 
 ### Tasks
@@ -104,7 +104,7 @@ Then, press ENTER to perform an action.
 **NOTE:** if the image is mounted with read-only privileges, this action will directly unmount it discarding changes
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_unmount_image.png" />
+	<img src="../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_unmount_image.png" />
 </p>
 
 In this menu:
@@ -118,17 +118,17 @@ In this menu:
 **NOTE:** these settings only apply to the commit operation. You can't change settings for read-only mounted images.
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_unmount_settings.png" />
+	<img src="../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_unmount_settings.png" />
 </p>
 
-These are the same settings you would find in the [image unmount dialog](../../mgmt/unmount_image). Configure them as you like and press ENTER to perform the unmount operation.
+These are the same settings you would find in the [image unmount dialog](../mgmt/unmount_image.md). Configure them as you like and press ENTER to perform the unmount operation.
 
 #### Removing volume images
 
 **NOTE:** this task is only applicable to images with multiple indexes
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_delete_image.png" />
+	<img src="../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_delete_image.png" />
 </p>
 
 In this menu you can **mark the volume images (indexes) to remove** (M key) and **proceed with the removal operation** (P key).
@@ -146,7 +146,7 @@ During this operation, you can view the image that is being removed. Once this p
 From the image index list shown above, you can pick the volume images to remove by specifying its number. You can specify multiple indexes by separating numbers with commas (`,`). Finally, press ENTER:
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_delete_image_indexmark.png" />
+	<img src="../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_delete_image_indexmark.png" />
 </p>
 
 #### Switching indexes
@@ -154,7 +154,7 @@ From the image index list shown above, you can pick the volume images to remove 
 **NOTE:** this task is only applicable to images with multiple indexes
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_switch_image.png" />
+	<img src="../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_switch_image.png" />
 </p>
 
 In this menu you can **specify the target index to mount** (S key), **specify the unmount operation** (C key) and **proceed with the switch operation** (P key).
@@ -164,7 +164,7 @@ In this menu you can **specify the target index to mount** (S key), **specify th
 From the image index list shown above, you can pick the target index to mount by specifying its number. Finally, press ENTER:
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_delete_image_indexmark.png" />
+	<img src="../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_delete_image_indexmark.png" />
 </p>
 
 #### Enabling write permissions

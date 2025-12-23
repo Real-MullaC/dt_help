@@ -1,7 +1,7 @@
 # Unattended answer file manager
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_man.png" />
+    <img src="../../res/img_tasks/unattend/unatt_man.png" />
 </p>
 
 The unattended answer file manager lets you manage unattended answer files for your project. You can access this manager using 2 methods:

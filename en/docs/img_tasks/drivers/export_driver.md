@@ -1,7 +1,7 @@
 # Exporting drivers
 
 <p align="center">
-	<img src="../../../res/img_tasks/drivers/export_driver.png" />
+	<img src="../../res/img_tasks/drivers/export_driver.png" />
 </p>
 
 With DISMTools you can easily export all third-party drivers of a Windows image to a folder which you can later use to add drivers to another image. This action can be accessed by clicking Commands > Drivers > Export driver packages...

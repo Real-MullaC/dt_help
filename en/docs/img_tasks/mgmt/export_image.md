@@ -1,7 +1,7 @@
 # Exporting a Windows image to a new image file
 
 <p align="center">
-	<img src="../../../res/img_tasks/mgmt/export_image.png" />
+	<img src="../../res/img_tasks/mgmt/export_image.png" />
 </p>
 
 If you want to separate your work made on a Windows image from the rest of the images in the image file, you can easily export it to a new image file with this dialog.

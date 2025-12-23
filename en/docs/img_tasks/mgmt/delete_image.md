@@ -1,7 +1,7 @@
 # Removing volume images
 
 <p align="center">
-	<img src="../../../res/img_tasks/mgmt/delete_image.png" />
+	<img src="../../res/img_tasks/mgmt/delete_image.png" />
 </p>
 
 With DISMTools you can easily remove indexes of a Windows image you don't need and focus on the ones you're interested.
@@ -19,4 +19,4 @@ Do note that, if the image is mounted, it will be unmounted **discarding changes
 
 ## Remarks
 
-While this streamlines the Windows image to only contain the indexes you want, it is not a way to reduce the image file in size. If you want to do that, consider [exporting the image](../export_image).
+While this streamlines the Windows image to only contain the indexes you want, it is not a way to reduce the image file in size. If you want to do that, consider [exporting the image](./export_image.md).

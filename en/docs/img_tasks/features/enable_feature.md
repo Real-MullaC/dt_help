@@ -1,7 +1,7 @@
 # Enabling features
 
 <p align="center">
-	<img src="../../../res/img_tasks/features/enable_feature.png" />
+	<img src="../../res/img_tasks/features/enable_feature.png" />
 </p>
 
 With DISMTools you can enable features of an image to add optional components to a Windows installation. This action can be accessed by clicking Commands > OS packages > Enable feature..., or by clicking the "Enable feature..." button.
@@ -29,7 +29,7 @@ You need to specify the features you want to enable on your Windows image or ins
 - If the parent package is not a Windows Foundation package, the name of the **parent package** needs to be provided. You can perform a quick package lookup to specify the name of the parent package
 
 <p align="center">
-	<img src="../../../res/img_tasks/features/pkg_lookup.png" />
+	<img src="../../res/img_tasks/features/pkg_lookup.png" />
 </p>
 
 - If a feature, whose state can be found in the list, has previously been removed from the image or installation; a **feature source** needs to be provided. You can browse your file system for an appropriate source, or get the source from group policy

@@ -1,7 +1,7 @@
 # Adding drivers
 
 <p align="center">
-	<img src="../../../res/img_tasks/drivers/add_driver.png" />
+	<img src="../../res/img_tasks/drivers/add_driver.png" />
 </p>
 
 With DISMTools you can add third-party drivers to a Windows image. This action can be accessed by clicking Commands > Drivers > Add driver...

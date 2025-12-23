@@ -4,10 +4,10 @@ By performing feature operations, you can modify the functionality of the Window
 
 ## Available tasks
 
-- [Enabling features](../enable_feature)
-- [Getting feature information](../../info/feat_info)
-- [Disabling features](../disable_feature)
+- [Enabling features](./enable_feature.md)
+- [Getting feature information](../info/feat_info.md)
+- [Disabling features](./disable_feature.md)
 
 <p align="center">
-	<img src="../../../res/img_tasks/features/features.png" />
+	<img src="../../res/img_tasks/features/features.png" />
 </p>

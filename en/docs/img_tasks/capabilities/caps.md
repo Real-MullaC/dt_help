@@ -6,10 +6,10 @@ These operations are supported on Windows 10 and later operating systems, includ
 
 ## Available tasks
 
-- [Adding capabilities](../add_capability)
-- [Getting capability information](../../info/cap_info)
-- [Removing capabilities](../remove_capability)
+- [Adding capabilities](./add_capability.md)
+- [Getting capability information](../info/cap_info.md)
+- [Removing capabilities](./remove_capability.md)
 
 <p align="center">
-	<img src="../../../res/img_tasks/capabilities/capabilities.png" />
+	<img src="../../res/img_tasks/capabilities/capabilities.png" />
 </p>

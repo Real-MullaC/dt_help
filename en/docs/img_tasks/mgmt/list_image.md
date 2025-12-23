@@ -1,7 +1,7 @@
 # Windows Image Explorer
 
 <p align="center">
-	<img src="../../../res/img_tasks/mgmt/WIM_Explorer.png" />
+	<img src="../../res/img_tasks/mgmt/WIM_Explorer.png" />
 </p>
 
 If you want to get information about the files and folders of any Windows image, you can use the **Windows Image Explorer** to achieve the job.

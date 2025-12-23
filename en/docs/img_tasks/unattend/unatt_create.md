@@ -1,7 +1,7 @@
 # Unattended answer file creator
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/unatt_creator_express.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/unatt_creator_express.png" />
 </p>
 
 The unattended answer file creator lets you create unattended answer files compatible with Windows 10 and 11 in 2 ways: an easy-to-use wizard, or a text editor
@@ -25,13 +25,13 @@ If you would like to learn more about the steps in this wizard, keep reading.
 In the **Regional Configuration** page, you can set the language, system locale, keyboard layout and home location of the target system. Set these to values that suit your needs. Or, you can set them during the configuration of the applied operating system:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_regional_settings.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_regional_settings.png" />
 </p>
 
 In the **System Configuration** page, you can set the computer name, the architectures that you wish to target with your answer file, and other settings:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_system_configuration.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_system_configuration.png" />
 </p>
 
 Additional options include:
@@ -42,19 +42,19 @@ Additional options include:
 In the **Time Zone** page, you can set the time zone of the target system:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_timezone.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_timezone.png" />
 </p>
 
 In the **Disk Configuration** page, you can set the disk configuration of the target system. You can let Setup give you the control over the disk configuration, or you can partition the first disk. You can also automate the entire disk configuration process by specifying DiskPart scripts:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_disk_config.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_disk_config.png" />
 </p>
 
 In the **Product Key** page, you can set the product key of the target system. You can choose from a generic product key tailored to the image edition, or you can type a custom product key:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_product_key.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_product_key.png" />
 </p>
 
 Notes:
@@ -65,7 +65,7 @@ Notes:
 In the **User Accounts** page, you can create the local user accounts of the target system. You can create up to 5 accounts, and you can set the password of each account:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_user_accounts.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_user_accounts.png" />
 </p>
 
 From here, you can also enable auto-logon settings for the target system. But, if you don't want to use local accounts, or want the operating system to ask you, you can skip this step.
@@ -73,13 +73,13 @@ From here, you can also enable auto-logon settings for the target system. But, i
 You can also configure password expiration settings for the target system, but it is not recommended to do so, according to the [National Institute of Standards and Technology (NIST)](https://pages.nist.gov/800-63-FAQ/#q-b05):
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_user_accounts_pw_expiry.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_user_accounts_pw_expiry.png" />
 </p>
 
 Finally, you can configure Account Lockout policies for the target system, or disable them. The latter is not recommended, as it can make the system more vulnerable to brute-force attacks:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_user_accounts_lockout.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_user_accounts_lockout.png" />
 </p>
 
 Notes:
@@ -89,13 +89,13 @@ Notes:
 In the **Virtual Machine Support** page, you can specify whether or not you want to install the integration features of your virtual machine provider (eg. VirtualBox Guest Additions or VMware Tools):
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_vm_support.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_vm_support.png" />
 </p>
 
 In the **Network Configuration** page, you can specify whether the target system will connect to a wireless network:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_network_config.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_network_config.png" />
 </p>
 
 Notes:
@@ -106,7 +106,7 @@ Notes:
 In the **System Telemetry** page, you can specify whether or not you want to send information to Microsoft and third-parties:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_telemetry.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_telemetry.png" />
 </p>
 
 Notes:
@@ -116,7 +116,7 @@ Notes:
 In the **Post-Installation Scripts** page, you can configure additional scripts in PowerShell that will be run during Windows installation, or when accounts log on for the first time:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_postinst_scripts.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_postinst_scripts.png" />
 </p>
 
 You can either write the post-installation scripts from scratch, or import existing ones.
@@ -129,7 +129,7 @@ Notes:
 In the **Component Settings** page, you can specify placeholders for additional components that you want to add to your answer file for specific passes. You will have to fill them in manually after the answer file is generated:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_components.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_components.png" />
 </p>
 
 Notes:
@@ -141,7 +141,7 @@ Notes:
 Finally, before creating the answer file, you can review the settings that you have configured in the wizard. If you want to change any settings, you can go back to the respective pages:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_review.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_review.png" />
 </p>
 
 After creating the answer file, you can create another one, open the file location, apply it, or edit it with the Editor mode or the Windows System Image Manager.
@@ -151,13 +151,13 @@ After creating the answer file, you can create another one, open the file locati
 The editor mode lets you perform advanced customizations to your unattended answer file to add more things, like additional components or rules. You can operate the editor mode using the buttons in the toolbar.
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/unatt_creator_editor.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/unatt_creator_editor.png" />
 </p>
 
 DISMTools 0.6.1 adds the ability to normalize the spacing of the answer file to make it consistent:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/unatt_creator_editor_normalize.gif" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/unatt_creator_editor_normalize.gif" />
 </p>
 
 ## Requirements
@@ -165,7 +165,7 @@ DISMTools 0.6.1 adds the ability to normalize the spacing of the answer file to 
 The unattended answer file creator requires the .NET 9 Runtime for the generator program to function. If DISMTools detects that the runtime hasn't been installed, you will be offered the ability to use the self-contained version, which contains the runtime:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/unattendgen_selfcontained.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/unattendgen_selfcontained.png" />
 </p>
 
 If you decide to use this version, DISMTools will save this preference until the self-contained version is removed, either manually, or due to a program update.
@@ -173,7 +173,7 @@ If you decide to use this version, DISMTools will save this preference until the
 Downloading this version will take some time, depending on your network connection speed and computer performance. After the download is complete, you will see a notification in your system tray, depending on what icons are allowed to appear in the tray:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/unattendgen_notify.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/unattendgen_notify.png" />
 </p>
 
 Finally, like with the **Windows Image Explorer**, you can use the generator program separately. You can check out its repository [here](https://github.com/CodingWonders/UnattendGen)
@@ -189,7 +189,7 @@ You can access the Domain Services Wizard by clicking the **Join target device t
 - Component Settings
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_jointargetdevice.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_jointargetdevice.png" />
 </p>
 
 You will first need to configure target DNS server information: the primary domain suffix, the name of the NIC (*Interface Alias*), and DNS server addresses.
@@ -206,13 +206,13 @@ For DNS server addresses, you need to put one address per line. If you want to c
 One example of filled-in information is shown below:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dnsinfo.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dnsinfo.png" />
 </p>
 
 After configuring DNS server information, you will need to configure information related to the initial user with which the target device will join the domain.
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dsinfo.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dsinfo.png" />
 </p>
 
 - If the device is part of a domain, the domain name will be filled in automatically and you will be able to pick users from available organizational units (OUs) in the domain. However, you can still specify different information manually.
@@ -250,7 +250,7 @@ Currently, there are 10 starter scripts available:
 In DISMTools 0.7.2, you can view more information about these starter scripts more easily by using the new **Starter Script Browser**:
 
 <p align="center">
-    <img src="../../../res/img_tasks/unattend/unatt_creator/unatt_script_browser.png" />
+    <img src="../../res/img_tasks/unattend/unatt_creator/unatt_script_browser.png" />
 </p>
 
 Some scripts allow you to configure settings after you import them:

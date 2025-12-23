@@ -4,6 +4,6 @@ Unattended answer files let you configure settings of your Windows image automat
 
 ## Available tasks
 
-- [Creating unattended answer files](../unatt_create)
-- [Managing unattended answer files](../unatt_man)
-- [Applying unattended answer files](../unatt_apply)
+- [Creating unattended answer files](./unatt_create.md)
+- [Managing unattended answer files](./unatt_man.md)
+- [Applying unattended answer files](./unatt_apply.md)

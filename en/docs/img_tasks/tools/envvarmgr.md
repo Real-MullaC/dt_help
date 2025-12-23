@@ -3,7 +3,7 @@
 The System Environment Variable Manager lets you view and modify information about the environment variables in a Windows image. Use the Manager to view and/or modify environment names and values.
 
 <p align="center">
-    <img src="../../../res/img_tasks/tools/envvarmgr/envvarmgr.png" />
+    <img src="../../res/img_tasks/tools/envvarmgr/envvarmgr.png" />
 </p>
 
 You can access the Environment Variable Manager by going to *Tools -> Manage system environment variables*.

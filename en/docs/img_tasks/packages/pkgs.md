@@ -4,10 +4,10 @@ By performing package operations, you can add additional functionality or update
 
 ## Available tasks
 
-- [Adding packages](../add_package)
-- [Getting package information](../../info/pkg_info)
-- [Removing packages](../remove_package)
+- [Adding packages](./add_package.md)
+- [Getting package information](../info/pkg_info.md)
+- [Removing packages](./remove_package.md)
 
 <p align="center">
-	<img src="../../../res/img_tasks/packages/packages.png" />
+	<img src="../../res/img_tasks/packages/packages.png" />
 </p>

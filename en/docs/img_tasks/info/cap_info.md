@@ -1,7 +1,7 @@
 # Capability information
 
 <p align="center">
-    <img src="../../../res/img_tasks/info/cap_info.png" />
+    <img src="../../res/img_tasks/info/cap_info.png" />
 </p>
 
 With DISMTools you can get the information about the capabilities present in Windows images and installations of every type.

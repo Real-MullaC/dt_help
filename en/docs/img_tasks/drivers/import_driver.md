@@ -1,7 +1,7 @@
 # Importing drivers
 
 <p align="center">
-	<img src="../../../res/img_tasks/drivers/import_driver.png" />
+	<img src="../../res/img_tasks/drivers/import_driver.png" />
 </p>
 
 With DISMTools you can easily import all third-party drivers of a Windows image to another image. This guarantees that the resulting image will have the same hardware compatibility as the source image. This action can be accessed by clicking Commands > Drivers > Import driver packages...
@@ -27,19 +27,19 @@ This action is supported on the following platforms:
 	- **Image file** will import all third-party drivers of another image. You will need to specify the source image, which you can pick from the list of mounted images
 
     <p align="center">
-        <img src="../../../res/img_tasks/drivers/import_driver_winimage.png" />
+        <img src="../../res/img_tasks/drivers/import_driver_winimage.png" />
     </p>
 	
 	- **Online installation** will import all third-party drivers of your active installation
 
     <p align="center">
-        <img src="../../../res/img_tasks/drivers/import_driver_active.png" />
+        <img src="../../res/img_tasks/drivers/import_driver_active.png" />
     </p>
 	
 	- **Offline installation** will import all third-party drivers of the desired deployed image. Simply specify the source drive
 
     <p align="center">
-        <img src="../../../res/img_tasks/drivers/import_driver_deployed.png" />
+        <img src="../../res/img_tasks/drivers/import_driver_deployed.png" />
     </p>
 	
 2. Click OK after you've made your selection

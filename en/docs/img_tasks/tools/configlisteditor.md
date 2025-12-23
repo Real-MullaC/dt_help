@@ -1,10 +1,10 @@
 # DISM Configuration List Editor
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/configlisteditor/configlisteditor.png" />
+	<img src="../../res/img_tasks/tools/configlisteditor/configlisteditor.png" />
 </p>
 
-The DISM Configuration List Editor lets you easily create configuration lists to exclude files and folder during tasks like [capturing an image](../../mgmt/capture_image). You can either use the graphical interface to exclude files, or edit the configuration list file manually.
+The DISM Configuration List Editor lets you easily create configuration lists to exclude files and folder during tasks like [capturing an image](../mgmt/capture_image.md). You can either use the graphical interface to exclude files, or edit the configuration list file manually.
 
 *This tool is available on DISMTools 0.3.1 and newer.*
 
@@ -19,7 +19,7 @@ You can easily add a new entry to exclude by typing it in the code view or by us
 When using the graphical interface, you can specify any entry using the file picker. Then, review the entry to add and decide if you want to add it.
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/configlisteditor/new_entry.png" />
+	<img src="../../res/img_tasks/tools/configlisteditor/new_entry.png" />
 </p>
 
 ### Excluding OneDrive folders
@@ -27,7 +27,7 @@ When using the graphical interface, you can specify any entry using the file pic
 DISMTools 0.4.2 introduces the ability to automatically exclude user OneDrive folders, which might cause errors in the tasks in which you can specify these files:
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/configlisteditor/onedrive_exclusion.png" />
+	<img src="../../res/img_tasks/tools/configlisteditor/onedrive_exclusion.png" />
 </p>
 
 To exclude user OneDrive folders in a drive, simply browse through your computer until you find it, and then click Exclude. User OneDrive folders will be automatically detected and added to the configuration list file.

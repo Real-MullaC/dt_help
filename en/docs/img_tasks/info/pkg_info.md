@@ -1,7 +1,7 @@
 # Package information
 
 <p align="center">
-    <img src="../../../res/img_tasks/info/pkg_info.png" />
+    <img src="../../res/img_tasks/info/pkg_info.png" />
 </p>
 
 With DISMTools you can get the information about installed packages, or about package files that you want to add or are interested in learning more about. This supports Windows images and installations of every type.
@@ -17,13 +17,13 @@ With DISMTools you can get the information about installed packages, or about pa
     - **I want to get information about the installed packages in the image** opens the installed package view. All installed packages of the image or installation are shown in the list on the left side. To get information about an installed package, **select it from the list**. You'll then see its information on the right
 
     <p align="center">
-        <img src="../../../res/img_tasks/info/get_instpkginfo.png" />
+        <img src="../../res/img_tasks/info/get_instpkginfo.png" />
     </p>
 
     - **I want to get information about package files** opens the package file view. In this mode, **you have to specify the packages and add them to the list**, which you can do by specifying them from the file picker, or by dropping them from an **elevated** program. If the program successfully detected information about a package file, you'll be able to see its information by selecting it. Otherwise, the entry is automatically removed
 
     <p align="center">
-        <img src="../../../res/img_tasks/info/get_pkgfileinfo.png" />
+        <img src="../../res/img_tasks/info/get_pkgfileinfo.png" />
     </p>
 
 - You can go back to the main screen by clicking the link on the top left
@@ -42,7 +42,7 @@ You can save this information to a report file by clicking the Save button on th
 DISMTools 0.5 introduces a new way of viewing custom properties of features. This new view allows you to better understand the hierarchy of the properties in a tree view.
 
 <p align="center">
-    <img src="../../../res/img_tasks/info/cprop_viewer.png" />
+    <img src="../../res/img_tasks/info/cprop_viewer.png" />
 </p>
 
 ## Related content

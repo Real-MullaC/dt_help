@@ -42,7 +42,7 @@ This command will return either `True` or `False`, depending on whether or not y
 On systems with the UEFI CA 2023 certificate installed, this value will be set to "Updated":
 
 <p align="center">
-    <img src="../../../../res/img_tasks/tools/isocreator/uefica2023/uefica2023status.png" />
+    <img src="../../../res/img_tasks/tools/isocreator/uefica2023/uefica2023status.png" />
 </p>
 
 You can learn more here: [Revoking vulnerable Windows boot managers](https://techcommunity.microsoft.com/blog/windows-itpro-blog/revoking-vulnerable-windows-boot-managers/4121735); [Secure Boot playbook for certificates expiring in 2026](https://techcommunity.microsoft.com/blog/Windows-ITPro-blog/secure-boot-playbook-for-certificates-expiring-in-2026/4469235)
@@ -50,7 +50,7 @@ You can learn more here: [Revoking vulnerable Windows boot managers](https://tec
 In DISMTools 0.7.2 and later, you may see the following warning:
 
 <p align="center">
-    <img src="../../../../res/img_tasks/tools/isocreator/uefica2023/uefica2023warning.png" />
+    <img src="../../../res/img_tasks/tools/isocreator/uefica2023/uefica2023warning.png" />
 </p>
 
 This warning will show if you're creating an ISO file on a UEFI system with Secure Boot enabled that does not support the UEFI CA 2023 binaries; if you check the "Use newly-signed boot binaries" option.
@@ -83,7 +83,7 @@ When you boot up the Preinstallation Environment, you will be presented with a s
 - Type `R` and press Enter to restart the computer
 
 <p align="center">
-    <img src="../../../../res/img_tasks/tools/isocreator/dt_pe/dt_pe_choose_install_option.png" />
+    <img src="../../../res/img_tasks/tools/isocreator/dt_pe/dt_pe_choose_install_option.png" />
 </p>
 
 Refer to the *Installing the operating system* section for more information about the 2 installation modes.

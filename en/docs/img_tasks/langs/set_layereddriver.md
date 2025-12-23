@@ -1,7 +1,7 @@
 # Setting keyboard layered drivers
 
 <p align="center">
-    <img src="../../../res/img_tasks/langs/set_layereddriver.png" />
+    <img src="../../res/img_tasks/langs/set_layereddriver.png" />
 </p>
 
 With DISMTools you can configure keyboard layered drivers for users of Japanese and Korean keyboards.

@@ -1,7 +1,7 @@
 # AppX package information
 
 <p align="center">
-    <img src="../../../res/img_tasks/info/appxpkg_info.png" />
+    <img src="../../res/img_tasks/info/appxpkg_info.png" />
 </p>
 
 With DISMTools you can get the information about the installed AppX packages in Windows images and installations of every type.

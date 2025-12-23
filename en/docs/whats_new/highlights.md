@@ -9,7 +9,7 @@ If you want to take a look at everything that has changed though, check out the 
 DISMTools 0.7.1 adds official support for FOG (*in both a Windows environment and a UNIX environment*), increasing the number of supported PXE providers to 2. Several improvements have also been made to the PXE Helper framework to support adding network drivers to the Preinstallation Environment, IPv6, and more.
 
 <p align="center">
-  <img src="../../res/whats_new/WhatsNew_1.png">
+  <img src="../res/whats_new/WhatsNew_1.png">
 </p>
 
 ## Prepare reference computers for image capture more easily
@@ -17,17 +17,17 @@ DISMTools 0.7.1 adds official support for FOG (*in both a Windows environment an
 If you're preparing a Windows image using a reference computer by pre-installing applications, generalizing that system has become easier with the new **Sysprep Preparation Tool**. Simply follow the steps in the wizard and you'll be ready to capture your image in no time.
 
 <p align="center">
-  <img src="../../res/img_tasks/tools/isocreator/syspreppreparator/SysprepPreparator_Preparation.png" />
+  <img src="../res/img_tasks/tools/isocreator/syspreppreparator/SysprepPreparator_Preparation.png" />
 </p>
 
-[Learn more about the Sysprep Preparation Tool](../../img_tasks/tools/isocreator/exttools/sysprep)
+[Learn more about the Sysprep Preparation Tool](../img_tasks/tools/isocreator/exttools/sysprep.md)
 
 ## Get to PE Helper tasks and components more easily
 
 DISMTools 0.7.1 introduces a new Autorun application that lets you launch HotInstall, to begin installation of operating systems, reboot to installation media, start PXE Helper server components, and launch the Sysprep Preparation Tool; all from a single interface.
 
 <p align="center">
-  <img src="../../res/whats_new/WhatsNew_2.png">
+  <img src="../res/whats_new/WhatsNew_2.png">
 </p>
 
 ## Improved Active Directory domain join integration and unattended answer file features
@@ -39,7 +39,7 @@ For those getting started with unattended installations, we now provide a set of
 When it comes to post-installation scripts, we have also improved the wizard so that you can now specify multiple scripts in each of the stages (during system configuration, when the first user logs on, or when users log on for the first time).
 
 <p align="center">
-  <img src="../../res/whats_new/WhatsNew_2.1.png">
+  <img src="../res/whats_new/WhatsNew_2.1.png">
 </p>
 
 ## Manage the services and environment variables of your images
@@ -47,11 +47,11 @@ When it comes to post-installation scripts, we have also improved the wizard so 
 DISMTools 0.7.1 features new tools that let you view and modify system services and environment variables in your Windows images, allowing you to see more information about the images you're working with and tweak them to your liking.
 
 <p align="center">
-  <img src="../../res/whats_new/WhatsNew_3.png">
+  <img src="../res/whats_new/WhatsNew_3.png">
 </p>
 
-- [Learn more about the Service Manager](../../img_tasks/tools/servicemgr)
-- [Learn more about the Environment Variable Manager](../../img_tasks/tools/envvarmgr)
+- [Learn more about the Service Manager](../img_tasks/tools/servicemgr.md)
+- [Learn more about the Environment Variable Manager](../img_tasks/tools/envvarmgr.md)
 
 ## Overall refinements
 

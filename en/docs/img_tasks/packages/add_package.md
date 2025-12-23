@@ -1,7 +1,7 @@
 # Adding packages
 
 <p align="center">
-	<img src="../../../res/img_tasks/packages/add_package.png" />
+	<img src="../../res/img_tasks/packages/add_package.png" />
 </p>
 
 With DISMTools you can add packages to add additional functionality and/or updates to a Windows image or installation. This action can be accessed by clicking Commands > OS packages > Add package..., or by clicking the "Add package..." button.
@@ -35,7 +35,7 @@ You need to specify the source of the packages you want to add. Then, you can ch
 With DISMTools you can also add Microsoft Update Manifest files by clicking the appropriately named button on the bottom left.
 
 <p align="center">
-	<img src="../../../res/img_tasks/packages/mum_addition.png" />
+	<img src="../../res/img_tasks/packages/mum_addition.png" />
 </p>
 
 *This action is supported on DISMTools 0.5.1 and later*

@@ -46,7 +46,7 @@ Based on this:
     
 - *If they are installed, but the management tools are not present:*
 
-    You will have to enable the `DHCPServer-Tools` and `Microsoft-Windows-Deployment-Services-Admin-Pack` features. You can do this by [enabling the features](../../features/enable_feature) from within the [online installation management mode](../../online_inst_mgmt).
+    You will have to enable the `DHCPServer-Tools` and `Microsoft-Windows-Deployment-Services-Admin-Pack` features. You can do this by [enabling the features](../../../../features/enable_feature.md) from within the [online installation management mode](../../../../online_inst_mgmt.md).
     
     You may have to restart the server after enabling the features.
 

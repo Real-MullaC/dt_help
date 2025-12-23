@@ -4,11 +4,11 @@ By performing driver package operations, you can enhance the functionality of th
 
 ## Available tasks
 
-- [Adding drivers](../add_driver)
-- [Exporting drivers](../export_driver)
-- [Getting driver information](../../info/drv_info)
-- [Removing drivers](../remove_driver)
+- [Adding drivers](./add_driver.md)
+- [Exporting drivers](./export_driver.md)
+- [Getting driver information](../info/drv_info.md)
+- [Removing drivers](./remove_driver.md)
 
 <p align="center">
-	<img src="../../../res/img_tasks/drivers/drivers.png" />
+	<img src="../../res/img_tasks/drivers/drivers.png" />
 </p>

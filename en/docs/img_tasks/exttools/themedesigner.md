@@ -8,7 +8,7 @@ The DISMTools Theme Designer is a tool that allows you to create and edit themes
 You should see the following window:
 
 <p align="center">
-	<img src="../../../res/img_tasks/exttools/themedesigner/ThemeDesigner.png" />
+	<img src="../../res/img_tasks/exttools/themedesigner/ThemeDesigner.png" />
 </p>
 
 ## Usage
@@ -19,7 +19,7 @@ It is time to start specifying the theme properties. First, come up with a cool 
 
 - **Background colors for outer and inner sections**. These colors are used, for example, here:
 
-    ![Background Colors](../../../res/img_tasks/exttools/themedesigner/ThemeDesigner_BGColors.png)
+    ![Background Colors](../../res/img_tasks/exttools/themedesigner/ThemeDesigner_BGColors.png)
 
 - **Foreground color**
 - **Accent colors**. The current implementation of the Theme engine uses 4 accent colors that can be used by the program in diverse areas
@@ -33,13 +33,13 @@ To change the colors, click the "Change" button next to the color previews. Then
 To add the theme to DISMTools, simply add it to `<program directory>\bin\themes` and relaunch the program. Then, go back to the personalization settings and you'll see the theme in the list of themes. Depending on whether you created a dark or light theme, you can select it as the default theme and it will be applied when you change the color mode; like this:
 
 <p align="center">
-    <img src="../../../res/img_tasks/exttools/themedesigner/ThemeDesigner_SetCustomTheme.png" />
+    <img src="../../res/img_tasks/exttools/themedesigner/ThemeDesigner_SetCustomTheme.png" />
 </p>
 
 Enjoy your new theme!
 
 <p align="center">
-    <img src="../../../res/img_tasks/exttools/themedesigner/ThemeDesigner_CustomTheme.png" />
+    <img src="../../res/img_tasks/exttools/themedesigner/ThemeDesigner_CustomTheme.png" />
 </p>
 
 **NOTE:** themes you create will not work on DISMTools 0.6.2 and older due to the absence of the theme engine.
@@ -51,7 +51,7 @@ DISMTools includes 2 versions of the Theme Designer that contain the same featur
 - The main version targets .NET 4.8 and works on Windows 7 SP1 and later (except Windows 10 1507/1511). The source code of this version is available on the GitHub repository
 - An alternative version targets .NET 2 and works on operating systems as old as Windows 98 Second Edition. The source code of this version is available as a ZIP file in the repository
 
-    ![Win9X Theme Designer](../../../res/img_tasks/exttools/themedesigner/ThemeDesigner_Win9x.png)
+    ![Win9X Theme Designer](../../res/img_tasks/exttools/themedesigner/ThemeDesigner_Win9x.png)
 
 ## The Theme Format
 

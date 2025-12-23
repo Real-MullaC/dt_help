@@ -1,7 +1,7 @@
 # Setting the image edition
 
 <p align="center">
-    <img src="../../../res/img_tasks/editions/set_imageedition.png" />
+    <img src="../../res/img_tasks/editions/set_imageedition.png" />
 </p>
 
 With DISMTools you can set the edition of a Windows image. This action can be accessed by clicking Commands > Windows editions > Upgrade image...
@@ -29,7 +29,7 @@ Simply specify the edition you want to upgrade your Windows image to, and some a
 **NOTE:** these options are only applicable to active Windows Server installations.
 
 <p align="center">
-    <img src="../../../res/img_tasks/editions/set_imageedition_server.png" />
+    <img src="../../res/img_tasks/editions/set_imageedition_server.png" />
 </p>
 
 - Use *Copy the End-User License Agreement (EULA) to the following location* if you want to copy the EULA to a specific location

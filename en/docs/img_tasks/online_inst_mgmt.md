@@ -3,7 +3,7 @@
 DISMTools 0.3 and later let you manage your active installation (referred to as an "online installation") using the same interface you are used to when managing standard projects and Windows images.
 
 <p align="center">
-	<img src="../../res/img_tasks/online_inst_mgmt/online_inst_mgmt.png" />
+	<img src="../res/img_tasks/online_inst_mgmt/online_inst_mgmt.png" />
 </p>
 
 ## Accessing this mode
@@ -13,10 +13,10 @@ You can access this mode in 2 ways: by clicking "Manage online installation" in 
 <p align="center">
 	<td>
 		<tr>
-			<img src="../../res/img_tasks/online_inst_mgmt/on_inst_mgmt_link.png" />
+			<img src="../res/img_tasks/online_inst_mgmt/on_inst_mgmt_link.png" />
 		</tr>
 		<tr>
-			<img src="../../res/img_tasks/online_inst_mgmt/on_inst_mgmt_menu_entry.png" />
+			<img src="../res/img_tasks/online_inst_mgmt/on_inst_mgmt_menu_entry.png" />
 		</tr>
 	</td>
 </p>
@@ -24,7 +24,7 @@ You can access this mode in 2 ways: by clicking "Manage online installation" in 
 You'll then be presented by this warning explaining you the risks of managing an active installation:
 
 <p align="center">
-	<img src="../../res/img_tasks/online_inst_mgmt/on_inst_mgmt_risk.png" />
+	<img src="../res/img_tasks/online_inst_mgmt/on_inst_mgmt_risk.png" />
 </p>
 
 ## Differences with standard project management

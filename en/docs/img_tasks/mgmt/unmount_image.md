@@ -1,7 +1,7 @@
 # Unmounting an image
 
 <p align="center">
-	<img src="../../../res/img_tasks/mgmt/unmount_image.png" />
+	<img src="../../res/img_tasks/mgmt/unmount_image.png" />
 </p>
 
 When you've finished working on a Windows image, you can easily unmount it.
@@ -16,7 +16,7 @@ When you've finished working on a Windows image, you can easily unmount it.
 If you don't know the mount directory of the image you want to unmount, click "Pick...", and you'll see a chooser from which you can select the image to unmount:
 
 <p align="center">
-	<img src="../../../res/img_tasks/mgmt/unmount_image_picker.png" />
+	<img src="../../res/img_tasks/mgmt/unmount_image_picker.png" />
 </p>
 
 ## Commit operation options

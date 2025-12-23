@@ -1,7 +1,7 @@
 # Removing capabilities
 
 <p align="center">
-	<img src="../../../res/img_tasks/capabilities/remove_capability.png" />
+	<img src="../../res/img_tasks/capabilities/remove_capability.png" />
 </p>
 
 With DISMTools you can remove capabilities, or Features on Demand (FoDs), from a Windows image or installation. This action can be accessed by clicking Commands > Capabilities > Remove capability...

@@ -1,7 +1,7 @@
 # Removing provisioned AppX packages
 
 <p align="center">
-	<img src="../../../res/img_tasks/appx/remove_provisionedappxpackage.png" />
+	<img src="../../res/img_tasks/appx/remove_provisionedappxpackage.png" />
 </p>
 
 With DISMTools you can remove provisioned AppX packages by using a checked list. This action can be accessed by clicking Commands > App packages > Remove provisioning for app package...

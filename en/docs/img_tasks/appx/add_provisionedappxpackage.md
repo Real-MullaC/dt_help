@@ -1,7 +1,7 @@
 # Adding provisioned AppX packages
 
 <p align="center">
-	<img src="../../../res/img_tasks/appx/add_provisionedappxpackage.png" />
+	<img src="../../res/img_tasks/appx/add_provisionedappxpackage.png" />
 </p>
 
 With DISMTools you can add provisioned AppX packages using an intuitive UI. This action can be accessed by clicking Commands > App packages > Add provisioned app package...
@@ -40,7 +40,7 @@ DISMTools 0.5 introduces the ability to add encrypted application packages (`.ea
 For standard encrypted applications (not bundles), you can also view standard information about them, thanks to a modified version of [UnpEax](https://github.com/dalion619/UnpEax):
 
 <p align="center">
-    <img src="../../../res/img_tasks/appx/eappx_support.png" />
+    <img src="../../res/img_tasks/appx/eappx_support.png" />
 </p>
 
 *Encrypted application bundle package support will come in a future version.*
@@ -77,11 +77,11 @@ II. The application contains stub packages
 4. If the server returns results, download the desired version of the AppX package **and its dependencies**
 
 <p align="center">
-	<img src="../../../res/img_tasks/appx/microsoft_apps.png" />
+	<img src="../../res/img_tasks/appx/microsoft_apps.png" />
 </p>
 
 <p align="center">
-	<img src="../../../res/img_tasks/appx/store_rg-adguard.png" />
+	<img src="../../res/img_tasks/appx/store_rg-adguard.png" />
 </p>
 
 If your browser complains about the safety of the files, confirm you want to download them.

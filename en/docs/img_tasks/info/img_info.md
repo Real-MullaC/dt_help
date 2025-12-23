@@ -1,7 +1,7 @@
 # Image information
 
 <p align="center">
-	<img src="../../../res/img_tasks/info/img_info.png" />
+	<img src="../../res/img_tasks/info/img_info.png" />
 </p>
 
 With DISMTools you can get the information of the currently mounted image, or any Windows image file you want, to view the details of an index.

@@ -1,7 +1,7 @@
 # Applying an image
 
 <p align="center">
-	<img src="../../../res/img_tasks/mgmt/apply_image.png" />
+	<img src="../../res/img_tasks/mgmt/apply_image.png" />
 </p>
 
 With DISMTools you can easily apply your Windows images to a directory or a drive.
@@ -25,5 +25,5 @@ The program will automatically perform operations required so that you can easil
 To reference SWM files, check the "Reference SWM files" check box, and specify the naming pattern of the SWM files. You can either use the file name of the image as a naming pattern, or specify a naming pattern manually. Click the "Scan pattern" button to test your naming pattern and, if files are found, entries will appear on the list below.
 
 <p align="center">
-	<img src="../../../res/img_tasks/mgmt/apply_image_swm_pattern.png" />
+	<img src="../../res/img_tasks/mgmt/apply_image_swm_pattern.png" />
 </p>

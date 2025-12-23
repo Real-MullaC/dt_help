@@ -1,7 +1,7 @@
 # Adding capabilities
 
 <p align="center">
-	<img src="../../../res/img_tasks/capabilities/add_capability.png" />
+	<img src="../../res/img_tasks/capabilities/add_capability.png" />
 </p>
 
 With DISMTools you can add capabilities, or Features on Demand (FoDs), to a Windows image or installation. Capabilities are features ready to be added at any time. More on capabilities [here](https://example.com).

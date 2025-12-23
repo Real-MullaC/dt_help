@@ -28,13 +28,13 @@ With the program up and running, you'll begin by **creating a project**. Use the
 You'll see the following screen, in which you need to provide a name and a location.
 
 <p align="center">
-	<img src="../../res/getting_started/create_a_project.png"/>
+	<img src="../res/getting_started/create_a_project.png"/>
 </p>
 
 After providing data on both fields, click OK. The project will be created and you'll be at the project screen.
 
 <p align="center">
-	<img src="../../res/getting_started/project_view.png"/>
+	<img src="../res/getting_started/project_view.png"/>
 </p>
 
 To load this project later, go to "Open an existing project..." and specify the project location.
@@ -42,7 +42,7 @@ To load this project later, go to "Open an existing project..." and specify the 
 If you have loaded a project recently, it's added to the Recents list. To access a project, double-click its entry in the list; and to remove an entry select it and click Remove entry.
 
 <p align="center">
-	<img src="../../res/getting_started/recents_list.png"/>
+	<img src="../res/getting_started/recents_list.png"/>
 </p>
 
 ### Loading a Windows image
@@ -54,7 +54,7 @@ The first thing you need to do after creating a project is to load an image to i
 To mount a Windows image, either click the "Mount image..." button, or click the link in the left panel. You'll see this screen:
 
 <p align="center">
-	<img src="../../res/getting_started/mount_an_image.png" />
+	<img src="../res/getting_started/mount_an_image.png" />
 </p>
 
 Specify the source image file you want to mount and the path you want to mount the image to. You can also configure more settings from this dialog, if you wish. Follow the image mount guide for more information.
@@ -70,7 +70,7 @@ Since DISMTools 0.2, the program lets you load a mount directory and use it in y
 To do this, switch to the "Image" tab on the left and click the link on the bottom. Next, specify the mount directory and click OK. That's it!
 
 <p align="center">
-	<img src="../../res/getting_started/load_mount_directory.png" />
+	<img src="../res/getting_started/load_mount_directory.png" />
 </p>
 
 To look for available mounted images, use the [**mounted image manager**](../img_tasks/tools/mimgmgr.md).
@@ -78,7 +78,7 @@ To look for available mounted images, use the [**mounted image manager**](../img
 **NOTE:** since version 0.3.2, the aforementioned link will open a popup mounted image picker, instead of a folder browser, that makes this process easier. Simply select a mounted image from the list and click OK:
 
 <p align="center">
-	<img src="../../res/getting_started/load_mount_directory_new.png" />
+	<img src="../res/getting_started/load_mount_directory_new.png" />
 </p>
 
 ## Best practices
@@ -107,4 +107,4 @@ If you plan on servicing images from a Windows Preinstallation Environment (WinP
 - **Booting Windows PE from a local disk:** you can allocate additional memory to your Windows PE installation when booting it from a local disk, to increase performance; and you can create temporary folders to store large updates
 - **Booting Windows PE from read-only media:** if you plan on booting the Windows PE installation from optical media, ensure that your computer has enough memory
 - **Add a page file to your PE installation:** to improve memory management, consider creating a page file. See the [`wpeutil` command reference](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/wpeutil-command-line-options?view=windows-11#createpagefile) for more information
-- **Specify a scratch directory:** for some operations, like adding packages, it is best to create and specify a scratch directory to store temporary files on. If not specified, Windows PE creates a scratch directory of the size you specified when [setting the scratch space](../img_tasks/winpe/set_scratchspace.md). However, you may run out of space on your PE environment
+- **Specify a scratch directory:** for some operations, like adding packages, it is best to create and specify a scratch directory to store temporary files on. If not specified, Windows PE creates a scratch directory of the size you specified when setting the scratch space. However, you may run out of space on your PE environment

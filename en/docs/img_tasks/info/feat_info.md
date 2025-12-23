@@ -1,7 +1,7 @@
 # Feature information
 
 <p align="center">
-    <img src="../../../res/img_tasks/info/feat_info.png" />
+    <img src="../../res/img_tasks/info/feat_info.png" />
 </p>
 
 With DISMTools you can get the information about the features present in Windows images and installations of every type.
@@ -18,7 +18,7 @@ With DISMTools you can get the information about the features present in Windows
 DISMTools 0.5 introduces a new way of viewing custom properties of features. This new view allows you to better understand the hierarchy of the properties in a tree view.
 
 <p align="center">
-    <img src="../../../res/img_tasks/info/cprop_viewer.png" />
+    <img src="../../res/img_tasks/info/cprop_viewer.png" />
 </p>
 
 ## Additional search functionality
@@ -31,13 +31,13 @@ With the state filter functionality introduced in DISMTools 0.6 you can get the 
 - `enablepending`
 
 <p align="center">
-	<img src="../../../res/img_tasks/info/feat_info_state_filter.gif" />
+	<img src="../../res/img_tasks/info/feat_info_state_filter.gif" />
 </p>
 
 To get features in a certain state containing a given name, you need to type the `state` flag after the name:
 
 <p align="center">
-    <img src="../../../res/img_tasks/info/feat_info_state_filter_example.png" />
+    <img src="../../res/img_tasks/info/feat_info_state_filter_example.png" />
 </p>
 
 ## Related content

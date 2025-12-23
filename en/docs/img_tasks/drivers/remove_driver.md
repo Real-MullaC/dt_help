@@ -1,7 +1,7 @@
 # Removing drivers
 
 <p align="center">
-	<img src="../../../res/img_tasks/drivers/remove_driver.png" />
+	<img src="../../res/img_tasks/drivers/remove_driver.png" />
 </p>
 
 With DISMTools you can remove third-party drivers from a Windows image. This action can be accessed by clicking Commands > Drivers > Remove driver...

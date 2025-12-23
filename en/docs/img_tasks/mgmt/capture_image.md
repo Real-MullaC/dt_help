@@ -1,7 +1,7 @@
 # Capturing an image
 
 <p align="center">
-	<img src="../../../res/img_tasks/mgmt/capture_image.png" />
+	<img src="../../res/img_tasks/mgmt/capture_image.png" />
 </p>
 
 With DISMTools you can easily capture a Windows installation directory to an image file.
@@ -19,4 +19,4 @@ The options you can perform when applying the image follow the command-line guid
 
 This task lets you specify configuration lists to exclude certain files. This is useful to avoid experiencing image capture errors (mostly with user OneDrive folders on Windows installations) or to avoid having an extremely large resulting image.
 
-Refer to the [DISM Configuration List Editor](../../tools/configlisteditor) utility and the [configuration list reference](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-configuration-list-and-wimscriptini-files-winnext?view=windows-11) for more information.
+Refer to the [DISM Configuration List Editor](../tools/configlisteditor.md) utility and the [configuration list reference](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-configuration-list-and-wimscriptini-files-winnext?view=windows-11) for more information.

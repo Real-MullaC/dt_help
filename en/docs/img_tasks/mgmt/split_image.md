@@ -1,7 +1,7 @@
 # Splitting an image into SWM files
 
 <p align="center">
-	<img src="../../../res/img_tasks/mgmt/split_image.png" />
+	<img src="../../res/img_tasks/mgmt/split_image.png" />
 </p>
 
 With DISMTools you can easily split a WIM file into SWM files. Splitting an image offers some advantages, like being able to fit them in CDs.
@@ -18,4 +18,4 @@ With DISMTools you can easily split a WIM file into SWM files. Splitting an imag
 
 ## Related content
 
-- [Merging SWM files](../../tools/swm2wim)
+- [Merging SWM files](../tools/swm2wim.md)

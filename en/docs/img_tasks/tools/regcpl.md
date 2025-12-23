@@ -1,7 +1,7 @@
 # Managing image registry hives
 
 <p align="center">
-	<img src="../../../res/img_tasks/tools/regcpl/regcpl.png" />
+	<img src="../../res/img_tasks/tools/regcpl/regcpl.png" />
 </p>
 
 The image registry control panel lets you perform changes to the registry of the image or offline installation you are managing quickly and easily.

@@ -8,7 +8,7 @@ The DynaLog Log Viewer (*DynaViewer*) is a tool that allows you to view and anal
 You should see the following window:
 
 <p align="center">
-    <img src="../../../res/img_tasks/exttools/dynaviewer/DynaViewer.png" />
+    <img src="../../res/img_tasks/exttools/dynaviewer/DynaViewer.png" />
 </p>
 
 ## Usage
@@ -29,7 +29,7 @@ After the log file is loaded, you can get the following information:
 You can get more information about each entry by double-clicking it. This will open a new window with the following information:
 
 <p align="center">
-    <img src="../../../res/img_tasks/exttools/dynaviewer/DynaViewer_EventProps.png" />
+    <img src="../../res/img_tasks/exttools/dynaviewer/DynaViewer_EventProps.png" />
 </p>
 
 If the file was externally modified, you can refresh the log file by clicking the "Refresh" button.

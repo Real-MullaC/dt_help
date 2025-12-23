@@ -1,7 +1,7 @@
 # Driver information
 
 <p align="center">
-    <img src="../../../res/img_tasks/info/drv_info.png" />
+    <img src="../../res/img_tasks/info/drv_info.png" />
 </p>
 
 With DISMTools you can get the information about installed drivers, or about driver files that you want to add or are interested in learning more about. This supports Windows images and installations of every type.
@@ -15,13 +15,13 @@ With DISMTools you can get the information about installed drivers, or about dri
     - **I want to get information about the installed drivers in the image** opens the installed driver view. All installed drivers of the image or installation are shown in the list on the left side. To get information about an installed driver, **select it from the list**. You'll then see its information on the right
 
     <p align="center">
-        <img src="../../../res/img_tasks/info/get_instdrvinfo.png" />
+        <img src="../../res/img_tasks/info/get_instdrvinfo.png" />
     </p>
 
     - **I want to get information about driver files** opens the driver file view. In this mode, **you have to specify the drivers and add them to the list**, which you can do by specifying them from the file picker, or by dropping them from an **elevated** program. If the program successfully detected information about a driver file, you'll be able to see its information by selecting it. Otherwise, the entry is automatically removed
 
     <p align="center">
-        <img src="../../../res/img_tasks/info/get_drvfileinfo.png" />
+        <img src="../../res/img_tasks/info/get_drvfileinfo.png" />
     </p>
 
 - You can go back to the main screen by clicking the link on the top left
@@ -35,7 +35,7 @@ A driver package (file) may target multiple devices. Thus, knowing more about a 
 When that is the case, DISMTools lets you easily go through all targets thanks to the controls on the top.
 
 <p align="center">
-    <img src="../../../res/img_tasks/info/drvpkg_hw_target_controls.png" />
+    <img src="../../res/img_tasks/info/drvpkg_hw_target_controls.png" />
 </p>
 
 The controls do the following:

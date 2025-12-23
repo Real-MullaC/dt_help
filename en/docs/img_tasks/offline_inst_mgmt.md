@@ -3,7 +3,7 @@
 DISMTools 0.4 and later let you manage installations in any partition (referred to as an "offline installation") using the same interface you are used to when managing standard projects and Windows images.
 
 <p align="center">
-	<img src="../../res/img_tasks/offline_inst_mgmt/offline_inst_mgmt.png" />
+	<img src="../res/img_tasks/offline_inst_mgmt/offline_inst_mgmt.png" />
 </p>
 
 ## Accessing this mode
@@ -13,10 +13,10 @@ You can access this mode in 2 ways: by clicking "Manage offline installation" in
 <p align="center">
 	<td>
 		<tr>
-			<img src="../../res/img_tasks/offline_inst_mgmt/off_inst_mgmt_link.png" />
+			<img src="../res/img_tasks/offline_inst_mgmt/off_inst_mgmt_link.png" />
 		</tr>
 		<tr>
-			<img src="../../res/img_tasks/offline_inst_mgmt/off_inst_mgmt_menu_entry.png" />
+			<img src="../res/img_tasks/offline_inst_mgmt/off_inst_mgmt_menu_entry.png" />
 		</tr>
 	</td>
 </p>
@@ -24,7 +24,7 @@ You can access this mode in 2 ways: by clicking "Manage offline installation" in
 Then, you have to choose the disk containing the Windows installation you want to manage:
 
 <p align="center">
-	<img src="../../res/img_tasks/offline_inst_mgmt/off_inst_mgmt_choose_disk.png" />
+	<img src="../res/img_tasks/offline_inst_mgmt/off_inst_mgmt_choose_disk.png" />
 </p>
 
 ### Unsupported drives

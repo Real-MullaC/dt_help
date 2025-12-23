@@ -3,7 +3,7 @@
 This page contains reference documentation for Administration Scripts included with the DISMTools Preinstallation Environment. You can access these by going to the `scripts` folder on the root of the boot drive (type `cd \scripts` to go there).
 
 <p align="center">
-    <img src="../../../../../res/img_tasks/tools/isocreator/cmdline/cmdline_scriptref.png" />
+    <img src="../../../../res/img_tasks/tools/isocreator/cmdline/cmdline_scriptref.png" />
 </p>
 
 ## Available scripts

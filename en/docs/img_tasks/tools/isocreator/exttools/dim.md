@@ -3,7 +3,7 @@
 The **Driver Installation Module** (DIM) is a quick and easy way of adding device drivers to booted Windows Preinstallation Environments:
 
 <p align="center">
-    <img src="../../../../../res/img_tasks/tools/isocreator/dim/DIM_MainScreen.png" />
+    <img src="../../../../res/img_tasks/tools/isocreator/dim/DIM_MainScreen.png" />
 </p>
 
 While full functionality is achieved with the DISMTools Preinstallation Environment, you can still use the DIM in every Preinstallation Environment. This is compatible with the x86, amd64, and arm64 architectures.
@@ -22,7 +22,7 @@ While full functionality is achieved with the DISMTools Preinstallation Environm
 After driver installation, you will see an installation summary:
 
 <p align="center">
-    <img src="../../../../../res/img_tasks/tools/isocreator/dim/DIM_Summary.png" />
+    <img src="../../../../res/img_tasks/tools/isocreator/dim/DIM_Summary.png" />
 </p>
 
 Later, after applying your Windows image, the Preinstallation Environment Helper will add those drivers to the target image.
@@ -32,7 +32,7 @@ Later, after applying your Windows image, the Preinstallation Environment Helper
 A practical use of the Driver Installation Module is to add compatibility for disk controllers that are not shipped with Windows PEs by default. This is the case if the test system is relatively new.
 
 <p align="center">
-    <img src="../../../../../res/img_tasks/tools/isocreator/dim/practical_use/disk_before.jpg" />
+    <img src="../../../../res/img_tasks/tools/isocreator/dim/practical_use/disk_before.jpg" />
 </p>
 
 Here's how you can proceed:

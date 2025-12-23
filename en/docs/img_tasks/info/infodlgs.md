@@ -1,7 +1,7 @@
 # Information dialogs
 
 <p align="center">
-    <img src="../../../res/img_tasks/info/info_dlgs.png" />
+    <img src="../../res/img_tasks/info/info_dlgs.png" />
 </p>
 
 Like their names suggest, information dialogs let you easily get specific information from a Windows image or installation with powerful and easy to use interfaces.
@@ -27,7 +27,7 @@ The following dialogs let you get specific information from a Windows image or i
 DISMTools 0.3.3 and later let you save this information to a file.
 
 <p align="center">
-    <img src="../../../res/img_tasks/info/info_save.png" />
+    <img src="../../res/img_tasks/info/info_save.png" />
 </p>
 
 This action will generate an **image information report**, which you can view at any time.
@@ -57,7 +57,7 @@ This search technology uses **linear search**, a method that is easy to implemen
 To get started, simply click on the search box text and start typing.
 
 <p align="center">
-    <img src="../../../res/img_tasks/info/search_example.gif" />
+    <img src="../../res/img_tasks/info/search_example.gif" />
 </p>
 
 The following items support this functionality:
