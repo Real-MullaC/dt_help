@@ -69,3 +69,28 @@ The following items support this functionality:
 - Installed drivers
 
 For features and capabilities, you can now use **state filters** with DISMTools 0.6.
+
+## Looking up an item online
+
+DISMTools 0.7.2 and later let you look up a selected item online using your preferred search engine. The following items support this functionality:
+
+- Features
+- Capabilities
+
+<p align="center">
+    <img src="../../res/img_tasks/info/item_online_lookup.png" />
+</p>
+
+You can pick from 5 search engines in Options -> Image operations:
+
+| Search Engine | Available since |
+|:--|:--:|
+| Google | 0.7.2 |
+| Bing | 0.7.2 |
+| DuckDuckGo | 0.7.2 |
+| Startpage | 0.7.2 |
+| Brave Search | 0.7.2 |
+
+<p align="center">
+    <img src="../../res/img_tasks/info/online_lookup_options.png" />
+</p>
