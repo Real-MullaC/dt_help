@@ -42,6 +42,15 @@ The Sysprep Preparation Tool is automatically added to ISOs by the Preinstallati
 	<img src="../../../../res/img_tasks/tools/isocreator/syspreppreparator/SysprepPreparator_AutorunEntry.png" />
 </p>
 
+In DISMTools 0.7.2 and later, you can pick from 2 modes in which the tool can run:
+
+- **Automatic mode** will run the tool with minimal user interaction and default settings. If a check fails or returns a warning, the tool will let you pause and review the results before proceeding
+- **Manual mode** will run the tool with full user interaction
+
+Whichever mode you choose, you can also prepare the boot image of the installation media for image capture after Sysprep completes by checking *Capture image after preparing the system*. You can learn more about image capture in the [administration script reference](../cmdline/scriptref.md).
+
+The guide will continue in manual mode.
+
 You will arrive at the wizard.
 
 <p align="center">

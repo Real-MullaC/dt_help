@@ -231,21 +231,22 @@ You've finished the Domain Services Wizard. When you get to the components scree
 
 ## Starter Script Reference
 
-Currently, there are 10 starter scripts available:
+Currently, there are 12 starter scripts available:
 
 | Script Name | Stage | Description |
 |:------------|:-----:|:------------|
-| Close First Logon Animation | During System Configuration | Closes the first logon animation that appears when a user logs on for the first time |
-| Set OEM Information | During System Configuration | Sets the OEM information of the system, like the manufacturer, model, or support information |
-| Set Quick Machine Recovery Settings | During System Configuration | Configures Quick Machine Recovery (QMR) settings on the target system |
-| Configure folders for Git integration | When the first user logs on | Configures folders for Git source control integration in the File Explorer |
-| Invoke WinUtil Configuration | When the first user logs on | Invokes WinUtil with a configuration file to apply personalization settings |
-| Set Personalization Settings | When the first user logs on | Sets personalization settings, like the desktop wallpaper, accent color, or color modes |
-| Set Registered Owner and Organization | When the first user logs on | Sets the registered owner and organization of the system |
-| Set up a custom wallpaper | When the first user logs on | Sets a custom wallpaper for the desktop |
-| Update Microsoft Store apps | When the first user logs on | Updates all Microsoft Store apps to their latest versions, if available |
-| Disable Second Chance OOBE | When users log on for the first time | Disables the Second Chance OOBE (SCOOBE) |
-| Disable Windows Notification Sources | When users log on for the first time | Disables various Windows notifications given sources |
+| Close First Logon Animation | During System Configuration | This script closes the First Logon Animation process and allows a system to reach the desktop sooner. This works on Windows 10 and Windows 11. |
+| Enable Verbose Status Messages | During System Configuration | This script enables the verbose status messages that are enabled by default on Windows Server. This can help report service start/stop status. |
+| Set OEM Information | During System Configuration | This script configures OEM settings such as the manufacturer or the model to further customize a Windows installation. |
+| Set Quick Machine Recovery Settings | During System Configuration | This script configures a target system's Quick Machine Recovery settings on Windows 11 24H2 and later. |
+| Configure folders for Git integration | When the first user logs on | This script configures a folder, or a set of folders, for Git source control integration in the File Explorer. Git and the latest versions of system components need to be installed in the target system to take advantage of all features. |
+| Invoke WinUtil Configuration | When the first user logs on | This script configures a target system using a configuration file exported from the Windows Utility. |
+| Set Personalization Settings | When the first user logs on | This script configures settings related to color modes and accent colors on the user environment of the target system. |
+| Set Registered Owner and Organization | When the first user logs on | This script configures the registered owner and organization of the target system. |
+| Set up a custom wallpaper | When the first user logs on | This script configures a wallpaper in the target system environment. |
+| Update Microsoft Store apps | When the first user logs on | This script invokes an update of all Microsoft Store applications. A network is required for this to work. |
+| Disable Second Chance OOBE | When users log on for the first time | This script disables the Second Chance Out-of-Box Experience on the target system. This works on Windows 10 and Windows 11. |
+| Disable Windows Notification Sources | When users log on for the first time | This script disables user-specified notification sources in the target system. |
 
 In DISMTools 0.7.2, you can view more information about these starter scripts more easily by using the new **Starter Script Browser**:
 
@@ -377,6 +378,7 @@ By default, the script will disable the following notification sources:
 - Startup App Notification
 - OneDrive
 - Microsoft Account Health
+- Copilot (AppX package)
 
 These entries will be added to list of notification sources, in Settings -> System -> Notifications. To add more entries to the list, do the following:
 
@@ -396,6 +398,8 @@ Notes for your source:
 - DISMTools 0.7.2 Preview 3:
     - Added:
         - Configure Git folders for File Explorer
+    - Modified:
+        - Added name and description fields to starter scripts for script browser
 - DISMTools 0.7.2 Preview 2:
     - Added:
         - Verbose Status Messages

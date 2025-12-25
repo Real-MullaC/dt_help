@@ -32,19 +32,7 @@ DISMTools 0.3.3 and later let you save this information to a file.
 
 This action will generate an **image information report**, which you can view at any time.
 
-DISMTools 0.4 expands this functionality by showing a preview of the information report after completing the process. It also lets you print it from said preview window.
-
-<p align="center">
-    <img src="https://github.com/CodingWonders/DISMTools/assets/101426328/34f899eb-fccd-4f2b-a787-cf4b10389f4b" />
-</p>
-
-<p align="center">
-    <img src="https://github.com/CodingWonders/DISMTools/assets/101426328/c236375b-ce3d-46bb-8ef4-e9749205265d" />
-</p>
-
-DISMTools 0.6 further improves this functionality by saving information to Markdown files and by showing those files as HTML pages. This allows for a more visually pleasing output with which you can view more information with less scrolling.
-
-Printing with this version and later versions requires you to use landscape for better printed copies.
+DISMTools 0.4 expands this functionality by showing a preview of the information report after completing the process.
 
 ## Searching through this information
 
@@ -90,6 +78,8 @@ You can pick from 5 search engines in Options -> Image operations:
 | DuckDuckGo | 0.7.2 |
 | Startpage | 0.7.2 |
 | Brave Search | 0.7.2 |
+
+Artificial Intelligence (AI) overview features are disabled by default for both Google and Brave Search.
 
 <p align="center">
     <img src="../../res/img_tasks/info/online_lookup_options.png" />

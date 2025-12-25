@@ -26,11 +26,14 @@ Usage:
 
 ### Capture Image (`imagecapture.bat`)
 
-This script captures a Windows system drive into a WIM file that can be used later.
+This script captures a Windows system drive into a WIM file that can be used later. In DISMTools 0.7.2 and later, this tool can be launched automatically after Sysprep completes.
 
 Usage:
 
-1. Enter the source drive letter (the Windows installation to capture)
+1. Enter the source drive letter (the Windows installation to capture), or an action to perform:
+    - Type `DIM` to run the Driver Installation Module in case you don't see your drives
+    - Type `NET` to map a network share in the environment. If successful, it will be used as the destination for the WIM file automatically
+    - Type `WDS` to run the WDS Image Capture wizard. This will let you upload the captured image directly to a WDS server   
 2. Enter the destination drive letter (where to save the WIM file)
 3. Enter the WIM file name (for example, `install.wim`)
 4. Enter the image name (for example, `Windows 11 Pro`)
