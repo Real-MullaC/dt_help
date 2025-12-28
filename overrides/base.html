@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block menu %}
+  <div style="padding: 10px; background: #fcfcfc; border-bottom: 1px solid #eee; margin-bottom: 10px; font-size: 0.85em;">
+    <strong>Language:</strong> 
+    <a href="{{ base_url }}/../">EN</a> | 
+    <a href="{{ base_url }}/../es/">ES</a>
+  </div>
+  {{ super() }}
+{% endblock %}

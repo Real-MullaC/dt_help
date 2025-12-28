@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Overview - DISMTools Help Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Overview";
+        var mkdocs_page_input_path = "getting_started/start.es.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html">
+          <img src="../../logo.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#primeros-pasos">Primeros pasos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#crear-su-primer-proyecto">Crear su primer proyecto</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cargar-una-imagen-de-windows">Cargar una imagen de Windows</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#montando-una-imagen-de-windows">Montando una imagen de Windows</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#cargando-un-directorio-de-montaje-existente">Cargando un directorio de montaje existente</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mejores-practicas">Mejores prácticas</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#rutas-de-proyectos">Rutas de proyectos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#operaciones-de-dism">Operaciones de DISM</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#servicio-de-windows-pe">Servicio de Windows PE</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="msmg_migration.html">MSMG Migration</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../whats_new/highlights.html">What's new</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Image tasks</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../img_tasks/img_tasks.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../img_tasks/online_inst_mgmt.html">Online installation management mode</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../img_tasks/offline_inst_mgmt.html">Offline installation management mode</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Image management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/mgmt/append_image.html">Appending to an image</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/mgmt/apply_image.html">Applying an image</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/mgmt/capture_image.html">Capturing an image</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/mgmt/delete_image.html">Removing volume images from an image file</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/mgmt/export_image.html">Exporting a Windows image</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/mgmt/list_image.html">Listing the contents of Windows images</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/mgmt/mount_image.html">Mounting an image</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/mgmt/remount_image.html">Remounting an image</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/mgmt/split_image.html">Splitting an image</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/mgmt/unmount_image.html">Unmounting an image</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Image information dialogs</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../img_tasks/info/infodlgs.html">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../img_tasks/info/img_info.html">Image file information</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../img_tasks/info/pkg_info.html">Package information</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../img_tasks/info/feat_info.html">Feature information</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../img_tasks/info/appxpkg_info.html">AppX package information</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../img_tasks/info/cap_info.html">Capability information</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../img_tasks/info/drv_info.html">Driver information</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../img_tasks/info/winpe_info.html">Windows PE configuration information</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >OS packages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/packages/pkgs.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/packages/add_package.html">Adding packages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/packages/remove_package.html">Removing packages</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Features</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/features/features.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/features/enable_feature.html">Enabling features</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/features/disable_feature.html">Disabling features</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >AppX packages</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/appx/appx.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/appx/add_provisionedappxpackage.html">Adding AppX packages</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/appx/remove_provisionedappxpackage.html">Removing AppX packages</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Edition servicing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/editions/editions.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/editions/set_edition.html">Upgrading an image to a higher edition</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/editions/set_productkey.html">Setting the product key</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Languages and regional servicing</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/langs/set_layereddriver.html">Setting keyboard layered drivers</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Capabilities</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/capabilities/caps.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/capabilities/add_capability.html">Adding capabilities</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/capabilities/remove_capability.html">Removing capabilities</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Drivers</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/drivers/drvs.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/drivers/add_driver.html">Adding drivers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/drivers/export_driver.html">Exporting drivers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/drivers/import_driver.html">Importing drivers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/drivers/remove_driver.html">Removing drivers</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../img_tasks/tools/mimgmgr.html">Mounted image manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../img_tasks/tools/wim2esd.html">Image conversion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../img_tasks/tools/swm2wim.html">SWM file merger</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../img_tasks/tools/configlisteditor.html">DISM Configuration List Editor</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >ISO creation tools</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/tools/isocreator.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/tools/isocreator/isocreate.html">Creating ISO files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Installing the operating system</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../img_tasks/tools/isocreator/install/localinstall.html">Local installations</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Network-based installations</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../img_tasks/tools/isocreator/install/netinst/pxehelpers.html">Overview</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../img_tasks/tools/isocreator/install/netinst/setup.html">Creating a basic network setup (Hyper-V)</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../img_tasks/tools/isocreator/install/netinst/wds.html">Windows Deployment Services (WDS) Helper</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >External Tools</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../img_tasks/tools/isocreator/exttools/dim.html">Driver Installation Module</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../img_tasks/tools/isocreator/exttools/dtpe_es.html">Extensibility Suite</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../img_tasks/tools/isocreator/exttools/sysprep.html">SysPrep Preparation Tool</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Command-line</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../img_tasks/tools/isocreator/cmdline/cmdline.html">Overview</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../img_tasks/tools/isocreator/cmdline/scriptref.html">Administration Script Reference</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../img_tasks/tools/regcpl.html">Image registry control panel</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../img_tasks/tools/servicemgr.html">System service manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../img_tasks/tools/envvarmgr.html">System environment variable manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Unattended answer files</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/unattend/unattend.html">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/unattend/unatt_man.html">Unattended answer file manager</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/unattend/unatt_create.html">Unattended answer file creator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/unattend/unatt_apply.html">Applying unattended answer files</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >External tools</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/exttools/themedesigner.html">Creating your themes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../img_tasks/exttools/dynaviewer.html">Viewing diagnostic logs</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">DISMTools Help Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Getting started</li>
+      <li class="breadcrumb-item active">Overview</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="comencemos">Comencemos</h1>
+<p>Si no sabe nada acerca del servicio de Windows, o si viene de otras herramientas, haga clic en una sección de abajo para aprender más:</p>
+<ul>
+<li><a href="new_to_servicing.html">Comenzar con el servicio de Windows</a></li>
+<li>Vengo de otras herramientas<ul>
+<li><a href="ntlite_migration.html">Viniendo de NTLite</a></li>
+<li><a href="msmg_migration.html">Viniendo de MSMG Toolkit</a></li>
+</ul>
+</li>
+</ul>
+<p>Si quiere saber acerca de algo más, continúe leyendo.</p>
+<h2 id="primeros-pasos">Primeros pasos</h2>
+<p>Tras finalizar la instalación, puede ejecutar el programa. Se recomienda realizar los siguientes pasos para comenzar</p>
+<h3 id="crear-su-primer-proyecto">Crear su primer proyecto</h3>
+<p>Con el programa cargado, puede comenzar <strong>creando un proyecto</strong>. Utilice el primer enlace de la pantalla principal, o vaya a Archivo -&gt; Nuevo proyecto...</p>
+<p>Verá la siguiente pantalla, en la que necesita proporcionar un nombre y una ubicación.</p>
+<p align="center">
+    <img src="../../res/getting_started/create_a_project.png"/>
+</p>
+
+<p>Tras especificar ambos campos, haga clic en Aceptar. El proyecto será creado y usted estará en la pantalla de proyectos.</p>
+<p align="center">
+    <img src="../../res/getting_started/project_view.png"/>
+</p>
+
+<p>Para cargar este proyecto más tarde, vaya a "Abrir un proyecto existente..." y especifique la ubicación del proyecto.</p>
+<p>Si ha cargado un proyecto recientemente, se añade al listado de Recientes. Para acceder a un proyecto, haga doble-clic en su entrada en la lista; y para eliminarlo, seleccione la entrada y haga clic en Eliminar entrada.</p>
+<p align="center">
+    <img src="../../res/getting_started/recents_list.png"/>
+</p>
+
+<h3 id="cargar-una-imagen-de-windows">Cargar una imagen de Windows</h3>
+<p>Lo primero que debe hacer después de crear un proyecto es cargar una imagen en él. Hay 2 maneras de hacerlo:</p>
+<h4 id="montando-una-imagen-de-windows">Montando una imagen de Windows</h4>
+<p>Para montar una imagen de Windows, haga clic en "Montar imagen..." o haga clic en el enlace del panel de la izquierda. Verá esta pantalla:</p>
+<p align="center">
+    <img src="../../res/getting_started/mount_an_image.png" />
+</p>
+
+<p>Especifique el archivo de imagen de origen que desea montar y la ubicación en la que desea montar la imagen. También puede configurar más opciones en este diálogo si lo desea. Siga la guía de montaje de imágenes para más información.</p>
+<p><strong>INFORMACIÓN:</strong> la manera más sencilla de obtener una imagen de Windows es extrayendo el archivo <code>sources\install.wim</code> de los medios de instalación de Windows. Esto puede ser realizado con facilidad montando la imagen ISO en el Explorador de archivos o utilizando programas de terceros, como 7-Zip.</p>
+<p>Cuando haya terminado, haga clic en Aceptar y espere hasta que se haya montado la imagen. ¡Terminó!</p>
+<h4 id="cargando-un-directorio-de-montaje-existente">Cargando un directorio de montaje existente</h4>
+<p>Desde la versión 0.2, el programa le permite cargar un directorio de montaje y usarlo en su proyecto si ya montó una imagen de Windows en él.</p>
+<p>Para ello, cambie a la pestaña "Imagen" en la izquierda y haga clic en el enlace de abajo. Después, especifique el directorio de montaje y haga clic en Aceptar. ¡Eso es todo!</p>
+<p align="center">
+    <img src="../../res/getting_started/load_mount_directory.png" />
+</p>
+
+<p>Para consultar las imágenes montadas, utilice el <a href="../img_tasks/tools/mimgmgr.html"><strong>administrador de imágenes montadas</strong></a>.</p>
+<p><strong>NOTA:</strong> desde la versión 0.3.2, el enlace anteriormente mencionado abrirá un escogedor de imágenes, en vez de un examinador de carpetas, que hace este proceso más fácil. Simplemente escoja una imagen montada de la lista y haga clic en Aceptar:</p>
+<p align="center">
+    <img src="../../res/getting_started/load_mount_directory_new.png" />
+</p>
+
+<h2 id="mejores-practicas">Mejores prácticas</h2>
+<p>Cuando crea un projecto y/o administra imágenes de Windows, considere estas mejores prácticas:</p>
+<h3 id="rutas-de-proyectos">Rutas de proyectos</h3>
+<ul>
+<li>
+<p>Almacene su proyecto en una ubicación cuya longitud no exceda la <a href="https://learn.microsoft.com/es-es/windows/win32/fileio/maximum-file-path-limitation">limitación de longitud de rutas</a> <code>MAX_PATH</code> (260 caracteres)</p>
+<ul>
+<li>Un buen lugar donde almacenar su proyecto puede estar en la raíz de su disco preferido o en una carpeta con 1 nivel de profundidad. Dichos ejemplos pueden ser: <code>D:\</code> o <code>E:\Projects\</code></li>
+<li>Puede deshabilitar esta limitación si utiliza Windows 10, versión 1607 o posterior, siguiendo <a href="https://learn.microsoft.com/es-es/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#enable-long-paths-in-windows-10-version-1607-and-later">estas guías</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="operaciones-de-dism">Operaciones de DISM</h3>
+<ul>
+<li>Un programa de antivirus podría no dejarle hacer una tarea de imagen, así que se recomienda establecer una exclusión a la ruta de montaje de la imagen</li>
+<li>No se recomienda montar más de 20 imágenes al mismo tiempo, porque podría causar en una ralentización del sistema.</li>
+<li>Debe ejecutar este programa y, en cualquier momento, DISM como un administrador, independientemente de los privilegios que posea</li>
+<li>Si ha montado una imagen con permisos de escritura, es mejor guardar sus cambios de vez en cuando. Así, si la imagen se corrompe, es más fácil recuperarla</li>
+<li>No se recomienda almacenar archivos que quiera utilizar en unidades de red, dado a que puede ser más rápido realizar la mayoría de operaciones si dichos archivos están copiados a un disco local</li>
+</ul>
+<h3 id="servicio-de-windows-pe">Servicio de Windows PE</h3>
+<p>Si planea ofrecer servicio a imágenes desde el entorno de preinstalación de Windows (WinPE), considere estos requisitos al planear su estrategia:</p>
+<ul>
+<li><strong>Iniciar Windows PE desde un disco local:</strong> puede alocar memoria adicional a su instalación de Windows PE al iniciarla desde un disco local, para aumentar el rendimiento; y puede crear carpetas temporales para almacenar actualizaciones grandes</li>
+<li><strong>Iniciar Windows PE desde medios de solo lectura:</strong> si piensa iniciar la instalación de Windows PE desde medios ópticos, asegúrese de que su equipo tenga suficiente memoria</li>
+<li><strong>Añadir un archivo de paginación a su instalación de Windows PE:</strong> para mejorar la administración de memoria, considere crear un archivo de paginación. Consulte la <a href="https://learn.microsoft.com/es-es/windows-hardware/manufacture/desktop/wpeutil-command-line-options?view=windows-11#createpagefile">referencia del comando <code>wpeutil</code></a> para más información</li>
+<li><strong>Especificar un directorio temporal:</strong> para algunas operaciones, como añadir paquetes, es mejor crear y especificar un directorio temporal en la que almacenar archivos temporales. Si no se especifica, Windows PE crea un directorio temporal del tamaño que especificó al <a href="../img_tasks/winpe/set_scratchspace.md">establecer el espacio temporal</a>. Sin embargo, se puede quedar sin espacio en su entorno de Windows PE</li>
+</ul>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../index.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="msmg_migration.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(false);
+        });
+    </script>
+
+</body>
+</html>
