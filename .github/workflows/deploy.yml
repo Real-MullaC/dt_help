@@ -24,8 +24,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs \
                       mkdocs-static-i18n \
-                      python-markdown-math \
-                      mkdocs-readthedocs-theme
+                      python-markdown-math
 
       - name: Build and Deploy
         run: mkdocs gh-deploy --force
